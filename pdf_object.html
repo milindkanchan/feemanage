@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="maximum-scale=2.0, initial-scale=1.0, user-scalable=yes"/>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link href="assets/css/jquery.alerts.css" rel="stylesheet">
+    <link href="assets/css/spinner.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <style>
+      #container { overflow: auto; -webkit-overflow-scrolling: touch; height: 100%; }
+      object { width: 100%; height: 100% }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+    <div class="loading" style="display:none;">
+        Loading&#8230; 
+      </div> 
+      <div class="net_status" style="display:none;"></div>   
+      <!-- Topbar -->
+      <div class="topbar fixed h_hide show_topbar">
+        <a href="#" class="fa fa-chevron-left left" id="backButton"></a>
+            <a href="#" id="backHomeButton"class="logo left">
+              Group BPM
+            </a>
+        <div class="right search_section">
+          <div class="category left hidden-xs">
+            <select id="selectCategoryList">
+              <option value="" disabled selected>Categories</option>
+            </select>
+          </div>
+          <div class="search left">
+            <i class="fa fa-search"></i>
+          </div>
+          <input type="text" placeholder="enter your search" class="seach_field" style="display:none;">
+          <div class="bar_icon left" id="menuToggle"><i class="fa fa-bars" ></i></div>
+        </div>
+      </div>  
+      <div id="container">
+        <object id="row" class="tap_to_show_header_footer">
+        
+        </object>
+      </div>
+
+       <!-- Menu -->
+        <nav class="menu" id="theMenu">
+          <div class="menu-wrap">
+            <span id="menuToggle"><i class="fa fa-bars" ></i></span>
+            <a href="#" class="smoothScroll collapse_txt">Collapse menu</a>
+            <div class="scroll">
+              <div class="profile_wrap">
+                <img id="imgProfile" src="assets/img/user-pic.jpg" class="left">
+                <div class="name" id="divUserName"></div>
+                <div class="desig">Group BPM</div>
+                <a href="#" onclick="userLogout();">
+                  <div class="btn jlt_btn log_out_btn">Logout</div>
+                </a>
+              </div>
+              <a href="#" class="smoothScroll user_settings" id="linkNews"><span class="fa fa-newspaper-o"></span>News</a>
+              <a href="favourite.html?id=readFav" class="smoothScroll user_settings"><span class="fa fa-star"></span>Favourites</a>
+              <a href="favourite.html?id=readLater" class="smoothScroll user_settings"><span class="fa fa-clock-o"></span>Read Later</a>
+              <a href="setting.html" class="smoothScroll user_settings"><span class="fa fa-gear"></span>Settings</a>
+              <a href="#" class="smoothScroll user_settings user_help"><span class="fa fa-question"></span>Help</a>
+            </div>
+          </div>
+        </nav>
+
+  
+    <div id="image_flip" class="rating_footer f_hide show_footer">
+        <div id="controls">
+          <div class="inner_rating">
+            <!-- <a href="#" id="prev_btn"><i class="fa fa-angle-left fa-2x"></i></a>  
+            <a href="#" id="next_btn"><i class="fa fa-angle-right fa-2x"></i></a>  -->
+            <i class="fa fa-rotate-right" title="Refresh" onclick="document.location.reload(true);"></i>
+            <i class="fa fa-star" title="Favourites" onclick="favourites('PDF')"></i>
+            <i class="fa fa-clock-o" title="Read Later" onclick="readLater('PDF');"></i>
+            <i class="fa fa-edit" title="Edit"></i>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.alerts.js"></script>
+    <script type="text/javascript" src="assets/js/footer_action.js"></script>
+    <script type="text/javascript" src="assets/js/pdf_js/web/compatibility.js"></script>
+    <script type="text/javascript" src="assets/js/pdf_js/build/pdf.js"></script>
+        <script src="assets/js/classie.js"></script>
+        <script src="assets/js/smoothscroll.js"></script>
+        <script src="assets/js/local.js"></script>
+        <script src="assets/js/common.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/jquery.mobile-events.min.js"></script>
+    <script id="my_script" type="text/javascript">
+
+      $('#backButton').click(function(){
+            parent.history.back();
+            return false;
+        });
+        $('#backHomeButton').click(function(){
+              document.location.href = "home.html";
+              return false;
+          });
+
+      $(window).ready(function(){
+        //$(".loading").show();
+        getUserDetail();
+            showNews();
+            var listItems = localStorage.cacheSelectCategory;
+            $("#selectCategoryList").append(listItems);
+        
+      });
+
+      function getUrlParams(){
+          var results = new RegExp('[\?]id=([^&#]*)').exec(window.location.href);
+          if (results==null){
+              return null;
+          }else{
+              return results[1] || 0;
+          } 
+      }
+
+      $("object").attr("data", "http://ec2-54-69-156-225.us-west-2.compute.amazonaws.com:8080/app/alfrscosvg/auth2/PDFDownload?id="+getUrlParams());
+      //$(".loading").hide();
+      $("object").css("width", $( window ).width() + "px");
+      $("object").css("height", $( window ).height() + "px");
+
+      $(window).on("orientationchange",function(event){
+        $("object").css("width", $( window ).width() + "px");
+        $("object").css("height", $( window ).height() + "px");
+      });
+      $(window).orientationchange();
+      $(".topbar").toggleClass('h_hide');
+          //$(".rating_footer").toggleClass('f_hide');
+      $("object").on("click", function(){
+            $(".topbar").toggleClass('h_hide');
+            $(".rating_footer").toggleClass('f_hide');
+          });
+      $("#selectCategoryList").select2({
+          placeholder: "Categories"
+        });
+    </script>
+  </body>
+</html>

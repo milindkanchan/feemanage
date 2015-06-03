@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, maximum-scale=2.0, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>BPM project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/spinner.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/jquery.alerts.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <script src="assets/js/jquery.alerts.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+      <div class="loading" style="display:none;">
+          Loading&#8230;
+      </div>
+      <!-- <div class="net_status" style="display:none;"></div> -->
+  
+    <!-- Topbar -->
+    <div class="topbar fixed">
+    <a href="#" class="fa fa-chevron-left left" id="backButton"></a>
+      <a href="home.html" class="logo left">
+        Group BPM
+      </a>
+      <div class="right search_section">
+        <div class="category left hidden-xs">
+          <select id="selectCategoryList">
+            <option value="" disabled selected>Categories</option>
+          </select>
+        </div>
+        <div class="search left">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="text" placeholder="enter your search" class="seach_field" style="display:none;">
+        <div class="bar_icon left" id="menuToggle"><i class="fa fa-bars" ></i></div>
+      </div>
+    </div>  
+
+    <!-- slider -->
+    <div class="image_slider">
+      <!--<div>
+        <img src="assets/img/home_img_1.jpg">
+        <div class="slider_content">
+          <h1>News</h1>
+          <h2>Nitesh Rungta Seconded as Center Head Kuala Lumpur</h2>
+          <a href="#" class="btn jlt_btn read_more_btn">Read More</a>
+          <a href="#" class="fa fa-rotate-right page_refresh"></a>
+          <p class="date"><i class="fa fa-calendar"></i>Sept 28, 2014</p>
+        </div>
+      </div>
+      <div>
+        <img src="assets/img/home_img_2.jpg">
+        <div class="slider_content">
+          <h1>News</h1>
+          <h2>Nitesh Rungta Seconded as Center Head Kuala Lumpur</h2>
+          <a href="#" class="btn jlt_btn read_more_btn">Read More</a>
+          <a href="#" class="fa fa-rotate-right page_refresh"></a>
+          <p class="date"><i class="fa fa-calendar"></i>Sept 28, 2014</p>
+        </div>
+      </div>
+      <div>
+        <img src="assets/img/home_img_3.jpg">
+        <div class="slider_content">
+          <h1>News</h1>
+          <h2>Nitesh Rungta Seconded as Center Head Kuala Lumpur</h2>
+          <a href="#" class="btn jlt_btn read_more_btn">Read More</a>
+          <a href="#" class="fa fa-rotate-right page_refresh"></a>
+          <p class="date"><i class="fa fa-calendar"></i>Sept 28, 2014</p>
+        </div>
+      </div>-->
+    </div>
+  
+    <div class="row home_container">
+      <div class="row" id="divCategory"></div>
+    </div>
+
+
+    <!-- This section is for Splash Screen -->
+    <div class="ole">
+    <section id="jSplash">
+      <div id="circle"></div>
+    </section>
+    </div>
+    <!-- End of Splash Screen -->
+
+
+    <!-- Side Menu -->
+
+    <nav class="menu" id="theMenu">
+      <div class="menu-wrap">
+        <span id="menuToggle"><i class="fa fa-bars" ></i></span>
+        <a href="#" class="smoothScroll collapse_txt">Collapse menu</a>
+        <div class="scroll">
+          <div class="profile_wrap">
+            <img id="imgProfile" src="assets/img/user-pic.jpg" class="left">
+            <div class="name" id="divUserName"></div>
+            <div class="desig">Group BPM</div>
+            <a href="#" onclick="userLogout();">
+                  <div class="btn log_out_btn jlt_btn">Log Out</div>
+                  </a>
+          </div>
+            <a href="#" id="linkNews" class="smoothScroll user_settings" ><span class="fa fa-newspaper-o"></span>News</a>
+            <a href="#" id="linkFavourite" class="smoothScroll user_settings"><span class="fa fa-star"></span>Favourites</a>
+            <a href="#" id="linkReadLater" class="smoothScroll user_settings"><span class="fa fa-clock-o"></span>Read Later</a>
+            <a href="#" id="linkSetting" class="smoothScroll user_settings"><span class="fa fa-gear"></span>Settings</a>
+          <a href="#" class="smoothScroll user_settings user_help"><span class="fa fa-question"></span>Help</a>
+        </div>
+      </div>
+    </nav>
+
+    <script src="assets/js/local.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <script src="assets/js/classie.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script>
+      $(document).ready(function(){
+        //onload();
+          $(".loading").show();
+          getCategoryDetails();
+          getUserDetail();
+          showNews();
+          $(".loading").hide();
+        $('.image_slider').slick({
+          dots: true,
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 20000000,
+        });
+        $('body').jpreLoader({
+        splashID: "#jSplash",
+        showSplash: true,
+        showPercentage: true,
+        autoClose: true,
+        splashFunction: function() {
+          $('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
+        }
+        });
+      });
+      
+    </script>
+  </body>
+</html>

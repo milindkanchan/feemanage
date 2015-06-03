@@ -1,0 +1,43 @@
+#iframe1{
+	position: absolute;
+	left: 20%;
+	height: 24rem;
+	width: 60%;
+	top: 50%;
+	margin-top: -19rem;
+	border:none;
+}
+
+#iframe1 body{
+	color:black!important;
+}
+#content{
+	background: white;
+}
+@media (max-width: 700px) and (orientation: portrait) {
+	#iframe1{
+		left: 5%;
+		width: 90%;
+		top: 50%;
+		margin-top: -10rem;
+		border:none;
+	}
+}
+@media (max-width: 700px) and (orientation: landscape) {
+	#iframe1{
+		left: 15%;
+		width: 70%;
+		top: 50%;
+		margin-top: -10rem;
+		border:none;
+	}
+}
+@media (min-width: 700px) and (max-width: 1024px) and (orientation: landscape) {
+	#iframe1{
+		left: 25%;
+		width: 50%;
+		top: 40%;
+		margin-top: -10rem;
+		border:none;
+	}
+}

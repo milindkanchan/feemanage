@@ -1,0 +1,923 @@
+commit a3c292769eb1b52930f4422bfe293882e9c24073
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Thu Nov 20 09:34:24 2014 +0530
+
+    minor fixes
+
+commit 5d26fc5d830bd04743980e7ecfb51909149cffff
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Thu Nov 20 08:47:04 2014 +0530
+
+    removed the width directive from the meta tag on pdf flip page
+
+commit cf66f5d2df6a97f3419ba1a699fb5950d4db132c
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Thu Nov 20 08:36:58 2014 +0530
+
+    added popup message box to the pdf flip page
+
+commit 568e29d64a70bbe32ca0e4024a25b9099c28f32e
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Thu Nov 20 01:28:17 2014 +0530
+
+    Fixed add/fav listing page.
+
+commit 9ff081713077a3299b1bb953f24d7227e7f7b90f
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 19 23:48:47 2014 +0530
+
+    added condition to category thumbnail and fixed search code.
+
+commit 2ee03da98eae7b0b2b3d77a40d9ff2625692d4c3
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Wed Nov 19 17:00:20 2014 +0530
+
+    height in meta tag removed
+
+commit 66bb5f69ae559004744f8e452b1cf1dd624afb42
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Wed Nov 19 12:48:19 2014 +0530
+
+    removed height directive from meta
+
+commit 225c76d25744973e9f942c9efa7afac08b598a4f
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Tue Nov 18 10:38:13 2014 +0530
+
+    added viewport meta to pdfflip
+
+commit 0b888910e471872826d17198bb6881f5d651739a
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Nov 19 15:01:54 2014 +0530
+
+    Image count issue.
+
+commit c6ff325c45b35685e3751a3aa2cc5a4c2ff90aa1
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Nov 19 12:39:17 2014 +0530
+
+    Added conditional flip swipe  navigation
+
+commit a19654bc6f5948473368348f6ace094b7705ca95
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Nov 19 12:34:48 2014 +0530
+
+    Added conditional flip arrow key navigation
+
+commit 1faade566c63b58282744de74179992bb5625978
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Nov 19 12:28:25 2014 +0530
+
+    fixed header not retracting issue in pdf show page
+
+commit 62481d5d775f62f9befdbba2203fd8135235b840
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Nov 19 12:21:11 2014 +0530
+
+    added show hide topbar and footer in single pdf show page
+
+commit aa5a20385a71b3ef14bced7da98cc270f7d88d40
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Nov 19 11:56:29 2014 +0530
+
+    Fixed Group Home link redirection
+
+commit f0120d5daf2df4560768488d704e96d52a2e719a
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Nov 19 11:22:28 2014 +0530
+
+    added left right arrow in pdf listing page
+
+commit c5cafcadbcdae81541afff3d4526aea9529ba45b
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Nov 19 10:12:15 2014 +0530
+
+    align search bar and made unified the view port in all pages
+
+commit 8c2dc84e44432c0963f0dab02ebf91aea4254e98
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Nov 19 09:22:58 2014 +0530
+
+    removed loading message from pdf flip page
+
+commit 98a5fa2c7e91bdb4b9d6480f5f6da50be6b72651
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 19 03:42:19 2014 +0530
+
+    Added slider effect if item/category is more than 8
+
+commit a1eccfd7a599081fb38a8bcdac5a9cd30f7def5f
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 19 01:19:14 2014 +0530
+
+    removed alert.
+
+commit d7979ff6c39bfd5ad0e9c66d557cdb5d544a8625
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 19 01:17:16 2014 +0530
+
+    Added new authentication api in new pages.
+
+commit 595aaf79ccdc1332f435406ab58ec4a6a3bed07a
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Tue Nov 18 00:42:31 2014 +0530
+
+    toggle button added to switch between single and double pages
+
+commit d3b407fc5cdbc299b7d6aa66010b3c3c76b79a68
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Tue Nov 18 00:06:49 2014 +0530
+
+    added tap events
+
+commit 5ed4e9926b34c1fc34aa76dbe4b4ac967172be1b
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Tue Nov 18 00:41:22 2014 +0530
+
+    hide the loading message and made the flip image fit to screen
+
+commit 59574f7120da3824509ee628d054cab7dde5fe92
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Tue Nov 18 00:22:43 2014 +0530
+
+    made pdf and image to cover the whole page and arrows on the top of all
+
+commit baa80f51395e8992d97835b5302ab9b585179ef2
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Nov 17 23:37:30 2014 +0530
+
+    Added refresh icon in footer to reload the page after orientation change.
+
+commit cfee15b5d144c7f0d75bf4595101c669a3652e1d
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Mon Nov 17 20:44:18 2014 +0530
+
+    pdf flip page enhancements
+
+commit 0fc1b413e40907c9d5a8a99275cb8250da31ed02
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Nov 17 12:31:26 2014 +0530
+
+    Positioned the image on selection
+
+commit 6e694ef440b9099d860c28f3c57452245e8a7e29
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Nov 17 11:28:22 2014 +0530
+
+    Fixed top back and home link issues.
+
+commit 1516eec92ed5298bfb5776f16600794792e4f689
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Mon Nov 17 10:15:23 2014 +0530
+
+    align the header,footer elements and pdf image page
+
+commit 5fb9dca5c9c5eaa0643097e2ae413a0464965864
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Mon Nov 17 02:28:53 2014 +0530
+
+    localstorage setting issue fix
+
+commit 25cccd6dc23f03dfa3595b4bc7a8d6c4e3ae72a9
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Sun Nov 16 20:19:08 2014 +0530
+
+    commented a console.log
+
+commit bed6c8c4becda337c4f43aa036d05193d407ac20
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Nov 16 21:58:30 2014 +0530
+
+    changes to the pdf flip orientation as per the window size
+
+commit 374a372b46fa7b0eee2a7fb9623d4c0a41b910d4
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Nov 16 19:31:15 2014 +0530
+
+    Added condition for portrait and landscape.
+
+commit 1f557718f610759b96809d911a120105971dbe16
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Nov 16 19:29:42 2014 +0530
+
+    made header and footer toggle on tapping of pdf
+
+commit 9d8e26359b9eb95e5fdb80e702aef137c7bbe736
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Nov 16 19:12:47 2014 +0530
+
+    added left right arrow in the pdf flip page
+
+commit 80978c99c9211f3274acff955e639b76de4c2b97
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Nov 16 18:56:45 2014 +0530
+
+    Added conditional localstorage.
+
+commit 233dbdd35d43a10208b335f83046b71c7d8e429c
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Sun Nov 16 18:51:04 2014 +0530
+
+    removed the alert messages
+
+commit 525ce51702648f41e8ed661ee4ff3ba692c55bbc
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Sun Nov 16 17:58:11 2014 +0530
+
+    login and other mods
+
+commit 9f10210ab8b20d3caa3d7f4a7ffc2932500583cf
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Nov 16 17:22:07 2014 +0530
+
+    added code to flip images as per the orientation(Still need to work).
+
+commit e50064bed4de1da26e62bb42e43cd187bafc1b1c
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Sat Nov 15 10:08:39 2014 +0530
+
+    changed the pdfdownload to pdfstream
+
+commit 58acaf6df6a8efd32f8db7f1ecfe5e51499ca8b8
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sat Nov 15 11:10:02 2014 +0530
+
+    made header hide in pdf flip page and on click of show header button it will shown
+
+commit 3048c26cb1ec1347b3cf434599cf005192de87dd
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Fri Nov 14 17:59:48 2014 +0530
+
+    minor merge conflict fix
+
+commit b29d4a89e09c3efface19b6272f74999a2494f47
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Fri Nov 14 17:53:24 2014 +0530
+
+    localstorage set on login page
+
+commit 5ec46f385868409a87668b308f37aa8ab8c10413
+Author: Milind <milindkanchan@gmail.com>
+Date:   Fri Nov 14 14:30:03 2014 +0530
+
+    Added pre cache to localstorage.
+
+commit 6af77885d0d45f9ab37a609821b810197aef13cf
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Fri Nov 14 14:14:15 2014 +0530
+
+    image flip footer and other fixes
+
+commit f407e2681f58237f568d273303f98684c3e0dd24
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Fri Nov 14 05:04:41 2014 +0530
+
+    align cards in home page and listing page then alligned footer and added left-right button for flip page
+
+commit f84581c3c24e65f79877eea9cd8b41b26d7e2413
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Fri Nov 14 03:02:02 2014 +0530
+
+    Added offline/online status changes.
+
+commit 43f5cd126356379cbe6b292d65e19f17559afd65
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Fri Nov 14 01:54:08 2014 +0530
+
+    ordered and removed unwanted functions.
+
+commit e8b35b03bd5366064d90808db91150c324891ddb
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Fri Nov 14 01:28:43 2014 +0530
+
+    Added the commented code for image_flip navigation button
+
+commit a87cf7284473483278211c76f0225a0b4bd6144d
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Fri Nov 14 00:13:53 2014 +0530
+
+    Added refresh code on home page
+
+commit 3412d4ee19a1756f91d96bd3569a0c4c216a8d99
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Thu Nov 13 23:39:11 2014 +0530
+
+    commented android related code for testing
+
+commit 2f43f8e6a90f4276a7f7bc5cfba11a4b0f6948d8
+Author: Milind <milindkanchan@gmail.com>
+Date:   Thu Nov 13 16:37:59 2014 +0530
+
+    Added code to update news cache.
+
+commit 98c2de74acb5e5c1c25e64e65fb9fbebae195d38
+Author: Milind <milindkanchan@gmail.com>
+Date:   Thu Nov 13 14:43:11 2014 +0530
+
+    Added max height and width of news thumbnail.
+
+commit 74713c24c03db5addd0d399d05e2bceb8e45a4df
+Author: Milind <milindkanchan@gmail.com>
+Date:   Thu Nov 13 14:40:52 2014 +0530
+
+    Added news on home page.
+
+commit 78a3f06a734439370d45b1e51704fa1cd12830ed
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Nov 12 16:37:19 2014 +0530
+
+    Exception fixed.
+
+commit 6bd8231888df8d50a709bd4c6c45d8febe1d127a
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Nov 12 16:13:51 2014 +0530
+
+    Update the code to verify the device
+
+commit fb9e505aff1775e02c4805ce8bfc82884ee38ad8
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Nov 12 16:03:59 2014 +0530
+
+    updated and Added spinner on pending pages.
+
+commit 816334d7635311a42c4aa9da30577c873fdd5206
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 12 10:02:33 2014 +0530
+
+    Added refresh page on index page
+
+commit 040fc3171672d11c2e66f7a3f572052593576426
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 12 00:59:34 2014 +0530
+
+    Code to show only latest 3 news
+
+commit 3a99d29617d0edb06447e351516fb9fad8698d43
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 12 00:37:32 2014 +0530
+
+    Added user profile image
+
+commit 6e3c0382b4ea457d2bcec9515a9f10caca46cb9e
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 12 00:35:25 2014 +0530
+
+    Added user profile image code changes
+
+commit 88f51ca47605210adb5eef7ff5452176280bfa42
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Tue Nov 11 20:26:58 2014 +0530
+
+    image and pdf slider mods for android
+
+commit 5de1a5ffafe42977d689fff34e1f6ac5a16f6e79
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Tue Nov 11 00:54:36 2014 +0530
+
+    Added just pdf_flip for android
+
+commit e1a5dd6f37b59e2ceae9d37dd030537533770d46
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Tue Nov 11 00:41:40 2014 +0530
+
+    Adjusted the header
+
+commit 75a7cf0abecb133e09258a6db31eba4a75508c84
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Tue Nov 11 00:27:56 2014 +0530
+
+    Added code to change view as per the device
+
+commit 620ced2db6ce17b547d1b6cec91242f07ae8da4c
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Nov 10 02:30:05 2014 +0530
+
+    Footer icons adjustments.
+
+commit 6a78d4d3df7c10f30b04cd93f3c37cd7bc9a1615
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Nov 10 02:02:39 2014 +0530
+
+    Adding footer to image_flip page.
+
+commit 8cefd787dcdf11809af0031ab96edd347349f6c2
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Mon Nov 10 00:51:21 2014 +0530
+
+    minor fixes
+
+commit 15bfba699c5b1385c6fa98f0482ebe1a0075dfb0
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Sun Nov 9 19:50:13 2014 +0530
+
+    more mods and fixes
+
+commit 8f2f567f8bbf2d5cea7a3834f20228c35849b8e1
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Sun Nov 9 18:07:16 2014 +0530
+
+    image_flip and login fix
+
+commit 73dc0e02fc0483703653f59496a46e84023bb9ff
+Author: Milind <milindkanchan@gmail.com>
+Date:   Fri Nov 7 17:11:34 2014 +0530
+
+    Added locastorage code for thumbnails, but its commented as its not correctly working.
+
+commit 808b9371ea46958595a631459dbbb318a1643c93
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Fri Nov 7 03:22:51 2014 +0530
+
+    change to pdf_flip page.
+
+commit 566b82cd9cf5bb3819ddc6e972403572f65a02c1
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Wed Nov 5 14:59:09 2014 +0530
+
+    bookblock css fixes
+
+commit 40c726c74685a7d6704f409d7bc43372cd64e9af
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 5 13:01:00 2014 +0530
+
+    Added book block effect to image_flip page.
+
+commit 1b618d2a017d5d665f5d119dfd6280eb631e3ae0
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 5 01:30:20 2014 +0530
+
+    content div moved down below header.
+
+commit cfae0dbf298d59f1f52cad3b65ef80891c8c3b2b
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 5 00:13:49 2014 +0530
+
+    Added search api
+
+commit 2d76f92d23558bce1ad906cb60345ebdcfd76496
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Nov 5 00:03:13 2014 +0530
+
+    Added search api
+
+commit 0d4ddb045f55a33750d7ba9e599ad84c096c6966
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Tue Nov 4 23:18:57 2014 +0530
+
+    sidebar issue fix
+
+commit 8468a205cd977dbc10a4b990d54f69ed747702b9
+Author: Milind <milindkanchan@gmail.com>
+Date:   Tue Nov 4 13:39:31 2014 +0530
+
+    Added base url to locastorage.
+
+commit 4613c9d498459857c2063683dfc32e24c901338a
+Author: Milind <milindkanchan@gmail.com>
+Date:   Tue Nov 4 12:36:27 2014 +0530
+
+    Alert message for empty favourite and readlater/
+
+commit ca4c37d9377c9351d8a08f2c50ba80ebe4d2a661
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Tue Nov 4 11:32:03 2014 +0530
+
+    back link and other fixes
+
+commit 76bcd8f5a5a94def2ef4093a9a9cf7dad5fda699
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Tue Nov 4 09:40:53 2014 +0530
+
+    provision to easily move between viewer and pdf flip
+
+commit cf8ae8710a9b86d0198d7fac8f827c35fabf2899
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Tue Nov 4 01:22:31 2014 +0530
+
+    Added left arrow on pdf-flip page.
+
+commit 7e5887a6765a26ef2f3f4d19c3baa91ac5d4f77b
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Tue Nov 4 00:47:03 2014 +0530
+
+    changed image_flip to scroll image_slider
+
+commit 4b0ef1ac2a2363ff9cc8a1abc72275bdef55e1aa
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Mon Nov 3 18:47:42 2014 +0530
+
+    login page ui improvements
+
+commit ba89b304f0d7e79b80fc7ca6148d4eca5072d556
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Mon Nov 3 18:11:39 2014 +0530
+
+    pdf scaling changed from 0.8 to 1
+
+commit 3847456937b7dcc5cd527dafdde1b11cbeb3da44
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Mon Nov 3 17:17:43 2014 +0530
+
+    pdf flip page improvements
+
+commit 4e8e993a0d14edb64bff179bbd43a63e2becbe9b
+Author: Milind <milindkanchan@gmail.com>
+Date:   Mon Nov 3 16:17:13 2014 +0530
+
+    Added alert message style
+
+commit b1ea443495890ddcd8948c1eb81dddcdf0a71737
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Mon Nov 3 03:43:02 2014 +0530
+
+    some fixes and mods
+
+commit a90b71a70924a9b9e1c6617256fc6c6d31bf25e6
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Nov 3 03:37:20 2014 +0530
+
+    Excetpion fixed from news page
+
+commit 5b54691d39952d5f59870e1c09be4bf88ac54cbb
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Nov 3 03:28:07 2014 +0530
+
+    Added News link
+
+commit d5b5cac2fcbaa19e1e6c12b1b9c52189f8f01ed0
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Nov 3 01:48:23 2014 +0530
+
+    User details locastorage issue fixed
+
+commit e6a3fffa8d92bc1986e874e3662c744fdbfc1dc8
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Nov 2 23:56:15 2014 +0530
+
+    Image flip effect and text shadow
+
+commit 23deb35c022d04d4278fb2b808641cb4398d9f19
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Nov 2 23:13:57 2014 +0530
+
+    Exception fixes
+
+commit b15a079ebb3895667c6d7d4db6feceb2adf3bf8d
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sat Nov 1 04:07:37 2014 +0530
+
+    Added thumbnail for favourites and read later
+
+commit 16a8b6cf5f1c6de748fbc3514725cdd11e557130
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sat Nov 1 02:54:59 2014 +0530
+
+    Added favourite and read later functionality
+
+commit 307ee75e37bccb735d09274bbc6b5be1b7c7c4a0
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sat Nov 1 00:37:16 2014 +0530
+
+    Added footer to pdf_flip page
+
+commit c2c7b63c0f9bb157ba35397ebe80b1a873aeea0f
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sat Nov 1 00:06:40 2014 +0530
+
+    Added generic exception messages and fixed pdf listing page
+
+commit 5ea97040da8881b2a791d1576583df079e36c21e
+Author: Milind <milindkanchan@gmail.com>
+Date:   Fri Oct 31 16:58:09 2014 +0530
+
+    Added listing page
+
+commit d6279855b05c9ce0abcc6cc4b0df841af046101e
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Fri Oct 31 09:48:49 2014 +0530
+
+    settings page mods
+
+commit feaaaaab76d26dd6392fdb2ba736266fdd43e721
+Author: Milind <milindkanchan@gmail.com>
+Date:   Thu Oct 30 14:53:04 2014 +0530
+
+    Added spinner overlay
+
+commit b2ecd9ec6970cab24a1b22ef60c14b0588f72754
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Thu Oct 30 02:20:36 2014 +0530
+
+    Update the base url
+
+commit 9dbe5f8378e29ec074d26bb93c5ce1c00f0f5b56
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Oct 29 16:17:45 2014 +0530
+
+    Syntax error fixed on logout.
+
+commit 04fce4cdda4fa308f12dcb3937e8a08ab5fb6d19
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Oct 29 15:51:02 2014 +0530
+
+    Redirect after setting submit
+
+commit ec85d7eb8387515df9a1541cd3e0103a71832934
+Author: Milind <milindkanchan@gmail.com>
+Date:   Wed Oct 29 14:40:57 2014 +0530
+
+    Clear localstorage on logout
+
+commit a6ea61cd0e9e2ec1ce8f6df4ea3fe9ad92f732de
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Oct 29 11:31:53 2014 +0530
+
+    Logout changes
+
+commit 4fc763f3a6b3b8497a9c8bdeab47bba69d51c499
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Oct 29 11:11:52 2014 +0530
+
+    commneted login ui
+
+commit 8fe795d3fa4d755364820656d3a46e7848eb654b
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Oct 29 10:54:23 2014 +0530
+
+    added logout
+
+commit ec51eb4bb92c8431f5a922147e2de3416e8d3d86
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Oct 29 10:52:12 2014 +0530
+
+    assets/js/local.js
+
+commit 56d5e035ab5603ceb9268193512cd091ed7c0894
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Oct 29 00:28:24 2014 +0530
+
+    Removed thumbnail from image_flip page.
+
+commit 08cacd84ec284507ab5c8b9d080ea55a15e22cc9
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Oct 29 00:07:08 2014 +0530
+
+    Added back button and increased the size of prev and next arrow of slider
+
+commit ad6b4247b213c70229597fc77d4fddff835bafd4
+Author: Milind <milindkanchan@gmail.com>
+Date:   Tue Oct 28 18:10:44 2014 +0530
+
+    Uncommented user details.
+
+commit e73e46b3bb896f73b131b2da3206fe422217bc5d
+Author: Milind <milindkanchan@gmail.com>
+Date:   Tue Oct 28 18:09:59 2014 +0530
+
+    Added console logs.
+
+commit 074e7778369809ae2ef747270995f92e91867524
+Author: Milind <milindkanchan@gmail.com>
+Date:   Tue Oct 28 17:37:59 2014 +0530
+
+    Added image slider on show page.
+
+commit 9bb2df05c2ba3bc6bd25c72941920edc1803c3e4
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Tue Oct 28 10:10:00 2014 +0530
+
+    Setting page changes.
+
+commit c21da73ebf8e5c681f59e55b2b7ac65ab10ae539
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Tue Oct 28 04:22:11 2014 +0530
+
+    Added slider to pages.
+
+commit a8c3f2196c7d9d5adfda2cfe300c93a3c8a542dd
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Oct 27 02:41:43 2014 +0530
+
+    Update views for images
+
+commit 05c80dc043f02b76c5979d65876ba798506ca036
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Oct 27 02:31:17 2014 +0530
+
+    added missing js file.
+
+commit 07526f4fe4f64d4eba000616ce6aa1b0b5f57035
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Mon Oct 27 02:21:29 2014 +0530
+
+    Temporarly added image viewer page
+
+commit e3b4b5d6359f498814dea26e31ba2a106c7097ee
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Oct 26 21:26:51 2014 +0530
+
+    Added localstorage
+
+commit 647b9c5abbe31bb56d43906b4acecbf548296c4e
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Oct 26 21:25:01 2014 +0530
+
+    removed alerts
+
+commit bc284843149b14394742bba74c2b117e2c83314a
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Oct 26 21:23:29 2014 +0530
+
+    Added base url and few change password changes.
+
+commit 041875d4934766442d680b1a29ef493e37eb63f4
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Fri Oct 24 02:49:16 2014 +0530
+
+    Added code to get user details and changes to pdf viewer page
+
+commit b9e2755aa7b65da2e3f7b517ecdac52fcc804d7c
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Thu Oct 23 15:38:49 2014 +0530
+
+    Fix to show current category images.
+
+commit cea908236e7436e81219fe1f0a1d5c0bde11ae53
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Wed Oct 22 03:54:58 2014 +0530
+
+    Added code for localstorage.
+
+commit b44ed9e47dff70f7ffaba3dd3ea420a75ef9ea97
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Tue Oct 21 09:32:33 2014 +0530
+
+    fixed the scroll issue in right menu and reduce size of news in home page
+
+commit 7054bb0e11834f2afc76a463466332869f33d7d2
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Mon Oct 20 08:56:00 2014 +0530
+
+    added back button to all pages
+
+commit 0baf446743717434b82584e7a7ffb71a243df5ab
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Mon Oct 20 01:31:32 2014 +0530
+
+    added css for show page cards for view enhancing
+
+commit 59629173c963822efdd9d1686f71e2e981a9ab95
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Oct 19 19:58:37 2014 +0530
+
+    Implement css massianary in show-listing page and align the contents
+
+commit 52499d9f970d5309b0fcb7164d7c4b95aa952e5e
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sat Oct 18 01:27:17 2014 +0530
+
+    added transition effect to the home page cards
+
+commit 776d0a239dad24773fc0d19dd1f767ccae3b6d85
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Oct 19 01:07:53 2014 +0530
+
+    Fixed category dropdown to redirect correctly.
+
+commit 13e74f424dec5ec7d139f0df12899ea3c2cdb186
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sun Oct 19 01:02:57 2014 +0530
+
+    Added show detail pages to the category and pdf viewer
+
+commit ba4d86f82e9ad055af3b4c5986b7460708b436e0
+Author: Milind Kanchan <milindkanchan@gmail.com>
+Date:   Sat Oct 18 16:23:10 2014 +0530
+
+    Changes to display category list for user as per the api:
+
+commit d5cd0578a21c9d9aa46623cdfa1a97336cbd7b54
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Oct 15 09:41:12 2014 +0530
+
+    added login iframe to index page
+
+commit adb5794bd31cef99ff3e80066b4e3b51368a877f
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Oct 15 09:38:17 2014 +0530
+
+    resolve js errors
+
+commit a703353b37eef41b6ec56bf53a4cebb3efaaf965
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Mon Oct 13 02:51:51 2014 +0530
+
+    allign the element for mobile and tablet
+
+commit 5ec869bbca614877ca17b0167e73537fe2121673
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Oct 12 21:05:31 2014 +0530
+
+    added media query for login and setting page form
+
+commit 666eaa9b53620921b37b3bde108aadfb808cdd75
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Oct 12 20:48:30 2014 +0530
+
+    added setting backgound image
+
+commit 7645d4005541ba6f70e7f4422f3feab82a569c2f
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Oct 12 20:05:22 2014 +0530
+
+    remove scroll from index page
+
+commit 2c342eaf038bb28c2a932cca8dd9606dc79e3804
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Oct 12 19:25:47 2014 +0530
+
+    added page links inside selectbox
+
+commit f6ef9c2093a20b4888be291eb2c9362366d4e866
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Oct 12 19:05:36 2014 +0530
+
+    added flip gallery to gallery listing page
+
+commit 3a1b73c465b28c244960d09b74b5699a460e3704
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sun Oct 12 18:56:17 2014 +0530
+
+    added dummy pages for all categories
+
+commit 25a0909a946c02a11a994e9e6f232152853f02cd
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sat Oct 11 21:43:34 2014 +0530
+
+    alignment and setting page added
+
+commit 2b8a6bbe33ba3dab9fb8462e230d7e46592739a5
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sat Oct 11 09:21:18 2014 +0530
+
+    made listing page cards to 4 column and 3 rows
+
+commit 34f98811e8b87583197bae68e5af523ee19352d5
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Sat Oct 11 08:41:08 2014 +0530
+
+    added footer to show page
+
+commit 7e3c020f5dc9c80d28b44e5775319f5b0fc2132e
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Fri Oct 10 10:09:48 2014 +0530
+
+    change the slide speed in show page
+
+commit 8676ec060ecfb6b23fb0c71249ee5edd7e5850c8
+Author: Srikanth Vishwamitra <svishwamitra@gmail.com>
+Date:   Fri Oct 10 17:12:20 2014 +0530
+
+    preloader added to home page and image flip effects added
+
+commit fc0a2ada5281c2463fb0cd7cc148c29d228b3b4c
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Fri Oct 10 10:01:48 2014 +0530
+
+    change show page and some alignments
+
+commit 5643aad41e9fe2968db765216174fab18f15bbe2
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Oct 8 10:17:32 2014 +0530
+
+    added logout link to index page
+
+commit 176684f8a25b11071cef5ec9d551c0f2028ee929
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Wed Oct 8 10:10:41 2014 +0530
+
+    changed login page and side panel
+
+commit 0f8f24290f7005ff95909d0a4c8d95c0f5e39a57
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Tue Oct 7 02:35:34 2014 +0530
+
+    added show page and listing page header then align the login page content
+
+commit 1aa9ad95e0fcca66ebd7d4b8d1c1229c61d970d3
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Mon Oct 6 11:34:55 2014 +0530
+
+    added listing page and login page
+
+commit a2ec7ee5a97e2f04a13db68ffc32541f5ff3ada2
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Mon Sep 29 09:26:43 2014 +0530
+
+    made width of card title to same as image
+
+commit ae49595a901d7f395cb3724158f33eb11d3b7d21
+Author: satyapriya <subudhisatyapriya@gmail.com>
+Date:   Mon Sep 29 09:12:29 2014 +0530
+
+    created the web page

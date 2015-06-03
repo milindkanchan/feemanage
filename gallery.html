@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, maximum-scale=2.0, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>BPM project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/font-awesome.css">
+
+
+    <script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/Chart.js"></script>
+
+    <script type="text/javascript" src="assets/js/settings.demo.js"></script>
+    <script type="text/javascript" src="assets/js/flipgallery.min.js"></script>
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" onLoad="flipGallery()">
+    <div class="topbar fixed">
+      <a href="home.html" class="fa fa-chevron-left left"></a>
+      <a href="home.html" class="logo left">
+        Group BPM
+      </a>
+      <div class="right search_section">
+        <div class="left selected_category">Galleries</div>
+        <div class="category left hidden-xs">
+          <select>
+            <option value="" disabled selected>Categories</option>
+            <option value="best_practices.html">Best Practices</option>
+            <option value="case_studies.html">Case Studies</option>
+            <option value="gallery.html">Gallery</option>
+            <option value="people.html">People</option>
+            <option value="services.html">Services</option>
+            <option value="others.html">Others</option>
+          </select>
+        </div>
+        <div class="search left">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="text" placeholder="enter your search" class="seach_field" style="display:none;">
+        <div class="bar_icon left" id="menuToggle"><i class="fa fa-bars" ></i></div>
+      </div>
+    </div> 
+    <!-- <div class="listing_sub_header">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#">Categories (2)</a></li>
+        <li class=""><a href="#">Gallery (12)</a></li>
+        <li class=""><a href="#">CaseStudies (20)</a></li>
+        <li class=""><a href="#">All (22)</a></li>
+      </ul>
+    </div>  -->
+
+    <div id="flipGallery">
+
+    </div>
+    <!-- <div id="row">
+     <div class="contaniner listing_container row">
+       <div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th1.jpg" class="card_image">
+             <div class="card_title">Event1</div>
+           </a>
+         </div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th2.jpg" class="card_image">
+             <div class="card_title">Event2</div>
+           </a>
+         </div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th3.jpg" class="card_image">
+             <div class="card_title">Event3</div>
+           </a>
+         </div>
+       </div>
+       <div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th1.jpg" class="card_image">
+             <div class="card_title">Event4</div>
+           </a>
+         </div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th1.jpg" class="card_image">
+             <div class="card_title">Event5</div>
+           </a>
+         </div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th1.jpg" class="card_image">
+             <div class="card_title">Event6</div>
+           </a>
+         </div>
+       </div>
+       <div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th1.jpg" class="card_image">
+             <div class="card_title">Event7</div>
+           </a>
+         </div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th2.jpg" class="card_image">
+             <div class="card_title">Event8</div>
+           </a>
+         </div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th3.jpg" class="card_image">
+             <div class="card_title">Event9</div>
+           </a>
+         </div>
+       </div>
+       <div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th1.jpg" class="card_image">
+             <div class="card_title">Event10</div>
+           </a>
+         </div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th1.jpg" class="card_image">
+             <div class="card_title">Event11</div>
+           </a>
+         </div>
+         <div class="col-md-4 col-sm-6 card_container">
+           <a href="show.html">
+             <img src="assets/img/th1.jpg" class="card_image">
+             <div class="card_title">Event12</div>
+           </a>
+         </div>
+       </div>
+       </div>
+     </div> -->
+
+      <!-- Side Menu -->
+
+      <nav class="menu" id="theMenu">
+        <div class="menu-wrap">
+          <span id="menuToggle"><i class="fa fa-bars" ></i></span>
+          <a href="#" class="smoothScroll collapse_txt">Collapse menu</a>
+          <div class="scroll">
+            <div class="profile_wrap">
+              <img src="assets/img/profile_pic.jpg" class="left">
+              <div class="name">Vivek Khana</div>
+              <div class="desig">Group BPM</div>
+              <a href="index.html">
+                <div class="btn jlt_btn log_out_btn">Logout</div>
+              </a>
+            </div>
+            <a href="show.html" class="smoothScroll user_settings"><span class="fa fa-newspaper-o"></span>News</a>
+            <a href="favourite.html" class="smoothScroll user_settings"><span class="fa fa-star"></span>Favourites</a>
+            <a href="favourite.html" class="smoothScroll user_settings"><span class="fa fa-clock-o"></span>Read Later</a>
+            <a href="setting.html" class="smoothScroll user_settings"><span class="fa fa-gear"></span>Settings</a>
+            <a href="#" class="smoothScroll user_settings user_help"><span class="fa fa-question"></span>Help</a>
+          </div>
+        </div>
+      </nav>
+
+      <script src="assets/js/classie.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/smoothscroll.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/slick.min.js"></script>
+      <script>
+
+      </script>
+  </body>
+  </html>

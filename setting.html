@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, maximum-scale=2.0, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>BPM project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+
+  <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+  
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="setting_bg">
+    <div class="new_login_form_wrap_setting">
+      <div class="setting_form">
+        <div class="inner_login">
+          <label class="text-center sign-in-label">Welcome <span id="divUserName"></span></label>
+          <input type="text" placeholder="The base url of cms" id="baseUrl">
+          <input type="text" placeholder="Your username" id="username"><br>
+          <input type="password" placeholder="Your password" id="password"><br>
+          <div class="row">
+          <select id="selectViewer" class='form-control custom' placeholder = "Select Viewer">
+          </select>
+          </div><br>
+          <input type="button" class="btn jlt_btn" value="Submit" onclick="validateSettings();">
+        </div>
+        <span  class="alert-danger" id="lblError"></span>
+        <div class="forgot_pass text-center" onclick="cancelSettings();">Cancel</div>
+      </div>
+    </div>
+
+
+<!--
+        <div class="setting_form">
+            <label class="person_name">Welcome <span id="divUserName"></span></label><br>
+            <div class="col-xs-12 col-md-12">
+              <input type="text" placeholder="The base url of cms" id="baseUrl">
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <input type="text" placeholder="Your username" id="username"><br>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <input type="password" placeholder="Your password" id="password"><br>
+            </div>
+            <div class="col-xs-12 col-md-12" style="margin-bottom: 20px;">
+              <select id="selectViewer" placeholder = "Select Viewer">
+                <option value="pdfreader" selected>PDF Reader</option>
+                <option value="viewer" >PDF Viewer</option>
+                <option value="flip" >PDF Flip</option>
+              </select>
+            </div>
+            <span  class="alert-danger" id="lblError"></span>
+            <div class="row">
+              <div class="col-md-6 col-xs-12 submit_btn_wrap">
+                <input type="button" class="btn jlt_btn" value="Submit" onclick="validateSettings();">
+              </div>
+              <div class="col-md-6 col-xs-12 cancel_btn_wrap">
+                <input type="button" class="btn jlt_btn" value="Cancel" onclick="cancelSettings();">
+              </div>
+            </div>
+        </div>-->
+  </body>
+  <script src="assets/js/local.js"></script>
+  <script src="assets/js/local_storage.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/validation.js"></script> 
+      <script>
+      $(document).ready(function(){
+        setUsersettingDetail(); 
+        var view = getLocalStorage("viewer");
+        var listitem = '';
+        var sel = false;
+        if (navigator.userAgent.match(/Android/i)){
+          listitem +=  "<option value='viewer' selected>PDF Viewer</option>"
+        }else{
+          listitem +=  "<option value='flip'"
+          if(view=="flip"){
+            listitem +=  " selected"
+          }  
+          listitem +=  ">PDF Flip</option>";
+/*
+          listitem +=  "<option value='pdfreader'"
+          if(view=="pdfreader"){
+            listitem +=  " selected"
+          } 
+          listitem +=  ">PDF Reader</option>"*/
+
+          listitem +=  "<option value='viewer'"
+          if(view == "viewer" || view == 'null'){
+            listitem +=  " selected"
+          } 
+          listitem +=  ">PDF Viewer</option>"
+        }
+        $("#selectViewer").append(listitem);
+      });
+    </script>
+  </html>

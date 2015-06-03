@@ -1,0 +1,456 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="maximum-scale=2.0, initial-scale=1.0, user-scalable=yes"/>
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/slick.css">
+		<link href="assets/css/jquery.alerts.css" rel="stylesheet">
+		<link href="assets/css/spinner.css" rel="stylesheet">
+		<link href="assets/css/select2.css" rel="stylesheet">
+    	<link rel="stylesheet" href="assets/css/font-awesome.css">
+
+		<style type="text/css">
+			body{
+				background:#fff;
+				overflow: hidden;
+				text-align: center;
+			}
+			#book{
+				width:100%;
+				height:100%;
+				position: absolute;
+				margin: auto;
+				z-index: 0;
+				box-shadow: 0px 0px 20px gray;
+			}
+
+			#book .turn-page{
+				/*
+				background-color:white;
+				*/
+				background-color:silver;
+				box-shadow: 0px 0px 10px gray;
+			}
+
+
+			#book .cover{
+				background:#333;
+			}
+
+			#book .cover h1{
+				color:white;
+				text-align:center;
+				font-size:50px;
+				position: absolute;
+				height:100%;
+				margin:0px;
+			}
+
+			#book .loader{
+				background-image:url(loader.gif);
+				width:24px;
+				height:24px;
+				display:block;
+				position:absolute;
+				top:238px;
+				left:188px;
+			}
+
+			#book .data{
+				text-align:center;
+				font-size:40px;
+				color:#999;
+				position: absolute;
+				height:100%;
+				width: 100%;
+			}
+
+			#controls{
+				width:100%;
+				text-align:center;
+				position: relative;
+				margin:auto;
+				top: 8px;
+				font-size:25px;
+			}
+
+			#controls input, #controls label{
+				font-size:25px;
+			}
+			#page-number{
+				border: 1px solid #dddddd;
+				height: 35px;
+			}
+
+			#book .odd{
+				background-image:-webkit-linear-gradient(left, #FFF 95%, #ddd 100%);
+				background-image:-moz-linear-gradient(left, #FFF 95%, #ddd 100%);
+				background-image:-o-linear-gradient(left, #FFF 95%, #ddd 100%);
+				background-image:-ms-linear-gradient(left, #FFF 95%, #ddd 100%);
+			}
+
+			#book .even{
+				background-image:-webkit-linear-gradient(right, #FFF 95%, #ddd 100%);
+				background-image:-moz-linear-gradient(right, #FFF 95%, #ddd 100%);
+				background-image:-o-linear-gradient(right, #FFF 95%, #ddd 100%);
+				background-image:-ms-linear-gradient(right, #FFF 95%, #ddd 100%);
+			}
+			.data canvas {
+				height: 100%;
+				width: 100%;
+			}
+
+		</style>
+	</head>
+	<body data-spy="scroll" data-offset="0" data-target="#theMenu" onload="onLoad()">
+		<div class="loading" style="display:none;">
+	    </div>    
+	    <div class="net_status" style="display:none;"></div>
+	    <!-- Topbar -->
+	    <div class="topbar h_hide show_topbar">
+	    	<a href="#" class="fa fa-chevron-left left" id="backButton"></a>
+      		<a href="#" id="backHomeButton"class="logo left">
+        		Group BPM
+      		</a>
+	      <div class="right search_section">
+	        <div class="category left hidden-xs">
+	          <select id="selectCategoryList">
+	            <option value="" disabled selected></option>
+	          </select>
+	        </div>
+	        <div class="search left">
+	          <i class="fa fa-search"></i>
+	        </div>
+	        <div class="left">
+		        <input type="text" placeholder="enter your search" class="seach_field" style="display:none;">
+		      </div>
+	        <div class="bar_icon left" id="menuToggle"><i class="fa fa-bars" ></i></div>
+	      </div>
+	    </div>  
+	    <div id="row" class="row">
+				<div class="popup" style="display:none">
+					<i class="fa fa-close popup_close_btn"></i>
+					
+				</div>
+				<div class="l_arrow_wrap" id="prev_btn">
+		    	<div class="l_arrow fa fa-chevron-left"></div>
+		    </div>
+				<div class="r_arrow_wrap"  id="next_btn">
+	    		<div class="r_arrow fa fa-chevron-right"></div>
+		    </div>
+				<div id="book" class="show_header"></div>
+			</div>
+
+	     <!-- Menu -->
+	      <nav class="menu" id="theMenu">
+	        <div class="menu-wrap">
+	          <span id="menuToggle"><i class="fa fa-bars" ></i></span>
+	          <a href="#" class="smoothScroll collapse_txt">Collapse menu</a>
+	          <div class="scroll">
+	            <div class="profile_wrap">
+	              <img id="imgProfile" src="assets/img/user-pic.jpg" class="left">
+	              <div class="name" id="divUserName"></div>
+	              <div class="desig">Group BPM</div>
+	              <a href="#" onclick="userLogout();">
+	                <div class="btn jlt_btn log_out_btn">Logout</div>
+	              </a>
+	            </div>
+	            <a href="#" id="linkNews" class="smoothScroll user_settings" ><span class="fa fa-newspaper-o"></span>News</a>
+	            <a href="#" id="linkFavourite" class="smoothScroll user_settings"><span class="fa fa-star" ></span>Favourites</a>
+	            <a href="#" id="linkReadLater" class="smoothScroll user_settings"><span class="fa fa-clock-o"></span>Read Later</a>
+	            <a href="#" id="linkSetting" class="smoothScroll user_settings"><span class="fa fa-gear"></span>Settings</a>
+	            <a href="#" class="smoothScroll user_settings user_help"><span class="fa fa-question"></span>Help</a>
+	          </div>
+	        </div>
+	      </nav>
+
+		<div class="rating_footer f_hide show_footer">
+			<div id="controls">
+				<div class="left counter_contents">
+					<label for="page-number" class="left page_element page_label">Page:</label>
+					<span class="left page_element"><input type="text" size="3" id="page-number"></span>
+					<span class="left page_element"> of </span><span id="number-pages" class="left page_element"></span>
+				</div>
+		    <div class="inner_rating">
+		      <!-- <a href="#" id="prev_btn"><i class="fa fa-angle-left fa-2x"></i></a>	
+		      <a href="#" id="next_btn"><i class="fa fa-angle-right fa-2x"></i></a>-->
+		      <i class="fa fa-exchange" title="Toggle" onclick="toggle();"></i>
+		      <i class="fa fa-rotate-right" title="Refresh" onclick="document.location.reload(true);"></i>
+		      <i class="fa fa-star" id="iFavourite" title="Favourites" onclick="favourites('PDF')"></i>
+		      <i class="fa fa-clock-o" id="iReadLater" title="Read Later" onclick="readLater('PDF');"></i>
+		      <i class="fa fa-edit" title="Edit"></i>
+		    </div>
+			</div>
+		</div>
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.alerts.js"></script>
+		<script src="assets/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="assets/js/footer_action.js"></script>
+		<script type="text/javascript" src="assets/js/turn.js"></script>
+		<script type="text/javascript" src="assets/js/pdf_js/web/compatibility.js"></script>
+		<script type="text/javascript" src="assets/js/pdf_js/build/pdf.js"></script>
+	  	<script src="assets/js/classie.js"></script>
+	  	<script src="assets/js/smoothscroll.js"></script>
+	  	<script src="assets/js/local.js"></script>
+	  	<script src="assets/js/local_storage.js"></script>
+	  	<script src="assets/js/common.js"></script>
+	  	<script src="assets/js/main.js"></script>
+	  	<script src="assets/js/slick.min.js"></script>
+	  	<script src="assets/js/jquery.mobile-events.min.js"></script>
+	  	<script src="assets/js/select2.js"></script>
+		<script id="my_script" type="text/javascript">
+			$("#selectCategoryList").select2({
+	          placeholder: "Categories"
+	        });
+			$(".select2-container input").prop("readonly",true);
+			
+			$('#backButton').on('tap', function(){
+		        parent.history.back();
+		        return false;
+		    });
+		    $('#backHomeButton').click(function(){
+            	document.location.href = "home.html";
+            	return false;
+        	});
+		    $('#prev_btn').on('tap', function(){
+		      $('#book').turn('previous');
+		      $(".topbar").addClass('h_hide');
+			  $(".rating_footer").addClass('f_hide');
+			  firstPageAlert();
+		    });
+		    $('#next_btn').on('tap', function(){
+		      $('#book').turn('next');
+		      $(".topbar").addClass('h_hide');
+			  $(".rating_footer").addClass('f_hide');
+			  lastPageAlert();
+		    });
+
+		    function firstPageAlert(){
+		      if ($('#book').turn('page') == 1){
+							$('#book').addClass('alert_border');
+				  	setTimeout(function(){
+							$('#book').removeClass('alert_border');
+						},3000);
+				  }
+		    }
+		    function lastPageAlert(){
+		    	if ($('#book').turn('page') == $("#book").turn('pages')){
+							$('#book').addClass('alert_border');
+				  	setTimeout(function(){
+							$('#book').removeClass('alert_border');
+						},3000);
+				  }
+		    }
+
+		    function onLoad() {
+		        document.addEventListener("deviceready", onDeviceReady, false);
+		    }
+
+			// Sample using dynamic pages with turn.js
+
+			var numberOfPages = 0; 
+
+		    // var url = 'pdf/test.pdf';
+   			var pdf_id = getUrlParams(); 
+   			var baseurl = getBaseURL();
+   			var url = ''
+   			var cat_id = pdf_id.split(';')[0];
+
+   		    function onDeviceReady() {
+		        // Now safe to use device APIs
+		        //alert("Device is ready");
+		        //downloadFile(baseurl, pdf_id);
+		    }
+		    var deviceType = getLocalStorage("appDevice");
+		    if(deviceType=="mobile"){
+	   			if (getLocalStorage("PDF_"+cat_id)!==null){
+	   				url = "file:///"+ getLocalStorage("PDF_"+cat_id);
+	   			}else{
+	   				url = baseurl + "/app/alfrscosvg/auth2/PDFStreamServlet?id=" + pdf_id;
+	   			}
+   			}else{
+   				url = baseurl + "/app/alfrscosvg/auth2/PDFStreamServlet?id=" + pdf_id;
+   			}
+   			// **********
+   			
+   			//var url = baseurl + "/app/alfrscosvg/auth/PDFDownload?id=" + pdf_id;
+   			//var url = "http://ec2-54-69-156-225.us-west-2.compute.amazonaws.com:8080/app/alfrscosvg/auth/PDFStreamServlet?id=" + pdf_id;	
+   			var rendered = [];
+   			var firstPagesRendered = false;
+    		var pdf = null,
+        	pageNum = 1,
+        	scale = 1;
+
+    		function renderPage(num) {
+
+	    		pdf.getPage(num).then(function(page) {
+        		var scale = 1;
+        		var viewport = page.getViewport(scale);
+
+		        //
+		        // Prepare canvas using PDF page dimensions
+		        //
+				var canvasID = 'canv' + num;
+		        var canvas = document.getElementById(canvasID);
+				if (canvas == null) return;
+		        var context = canvas.getContext('2d');
+		        canvas.height = viewport.height;
+		        canvas.width = viewport.width;
+
+		        //
+		        // Render PDF page into canvas context
+		        //
+		        var renderContext = {
+		          canvasContext: context,
+		          viewport: viewport
+		        };
+		        page.render(renderContext);
+
+		        // Update page counters
+		        document.getElementById('page-number').textContent = pageNum;
+		        document.getElementById('number-pages').textContent = pdf.numPages;
+		        $(".loading, .ui-loader").hide();
+		        }
+			)}
+	
+
+			// Adds the pages that the book will need
+			function addPage(page, book) {
+			// 	First check if the page is already in the book
+				if (!book.turn('hasPage', page)) {	
+					// Create an element for this page
+					var element = $('<div />', {'class': 'page '+((page%2==0) ? 'odd' : 'even'), 'id': 'page-'+page})
+					element.html('<div class="data"><canvas id="canv' + page + '"></canvas></div>');
+					// element.html('<div><i>test</i></div>');
+					// If not then add the page
+					book.turn('addPage', element, page);
+					// renderPage(page);
+					//*/
+				}	
+			}
+
+			$(window).ready(function(){
+				$(".loading").show();
+				getUserDetail();
+        		showNews();
+        		changeFavReadClass();
+        		var listItems = getLocalStorage("cacheSelectCategory");
+        		var displayPage = 'double';
+      			$("#selectCategoryList").append(listItems);      			
+				PDFJS.disableWorker = true;
+				PDFJS.getDocument(url).then(function(pdfDoc) {
+					numberOfPages = pdfDoc.numPages;
+					//if (numberOfPages < 3){
+						displayPage = 'single';
+					//} 
+					pdf = pdfDoc;
+					$(".loading").show();
+					$('#book').turn.pages = numberOfPages;
+					$('#book').turn({acceleration: true,
+						pages: numberOfPages,
+						elevation: 100,
+						gradients: true,
+						autoCenter: true,
+						display: displayPage,
+						when: {
+							turning: function(e, page, view) {
+								// Gets the range of pages that the book needs right now
+								var range = $(this).turn('range', page);
+								// Check if each page is within the book
+								for (page = range[0]; page<=range[1]; page++) {
+									addPage(page, $(this));
+									//renderPage(page);
+								};
+							},
+							turned: function(e, page) {
+								$('#page-number').val(page);		
+								if (firstPagesRendered) {
+									var range = $(this).turn('range', page);
+									for (page = range[0]; page<=range[1]; page++) {
+										if (!rendered[page]) {
+											renderPage(page);
+											rendered[page] = true;
+										}
+									};
+								}
+
+							}
+						}
+					});
+
+					$('#number-pages').html(numberOfPages);
+					$('#page-number').keydown(function(e){
+						var p = $('#page-number').val();
+						if (e.keyCode==13) {
+							$('#book').turn('page', p);
+							renderPage(p);
+						}	
+					});
+					var n = numberOfPages;
+					if (n > 6 ) n = 6;
+					for (page = 1; page <= n; page++) {
+						renderPage(page);
+						rendered[page] = true;
+					};
+					firstPagesRendered = true;
+				});
+		        $(window).on("orientationchange",function(event){
+		        	if ($('#book').turn('display') === "single"){
+						$('#book').turn('display', 'single').turn('size', $(window).width(), $(window).height()).turn("options", {turnCorners: "tl,tr"}).turn("options", {turnCorners: "bl,br"});
+					} else {
+						$('#book').turn('display', 'double').turn('size', $(window).width(), $(window).height());
+					}
+		          //if(event.orientation === "portrait") // Portrait
+		          //{
+		          //	$('#book').turn('display', 'single').turn('size', $(window).width(), $(window).height());
+		          //}
+		          //else // Landscape
+		          //{ 
+		          //	if (numberOfPages < 3){
+		          //		$('#book').turn('display', 'double').turn('size', $(window).width(), $(window).height());
+		          //	}
+		          //}
+		        });
+		        $(window).orientationchange();
+
+			});
+			$(window).bind('keydown', function(e){
+				if (e.target && e.target.tagName.toLowerCase()!='input')
+				{
+					if (e.keyCode==37){
+						$('#book').turn('previous');
+						//firstPageAlert();
+					} else if (e.keyCode==39){
+						$('#book').turn('next');
+						//lastPageAlert();
+					}
+				}
+			});
+
+			function getUrlParams(){
+		    	var results = new RegExp('[\?]id=([^&#]*)').exec(window.location.href);
+		    	if (results==null){
+		       		return null;
+		    	}else{
+		       		return results[1] || 0;
+		    	} 
+			}
+			function toggle(){
+				if ($('#book').turn('display') === "single"){
+					$('#book').turn('display', 'double').turn('size', $(window).width(), $(window).height());
+				} else {
+					$('#book').turn('display', 'single').turn('size', $(window).width(), $(window).height()).turn("options", {turnCorners: "tl,tr"}).turn("options", {turnCorners: "bl,br"});
+				}
+			}
+			$(".select2-container input").prop("readonly",true);
+			$(".show_header").click(function(){
+				$(".topbar").toggleClass('h_hide');
+				$(".rating_footer").toggleClass('f_hide');
+			});
+		</script>
+	</body>
+</html>

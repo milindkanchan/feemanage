@@ -45,11 +45,9 @@
 	  		<div class="login_form">
           <div class="inner_login">
   	  			<label class="text-center sign-in-label">Sign-in to your account</label>
-  	  			<input type="text" id="loginUser" placeholder="User Name">
-  	  			<input type="password" id="loginPassword" placeholder="Password">
+  	  			<input type="text" id="loginUser" placeholder="User Name" value="test">
+  	  			<input type="password" id="loginPassword" placeholder="Password" value="test">
             <div class="row">
-    	  			<input type="checkbox" class="checkbox" id="login_checkbox">
-              <label for="login_checkbox" class="remember_me">Remember me?</label>
   	  			  <input type="submit" class="btn login_btn" value="Sign In" id="btnLogin"></a>
             </div>
           </div>
@@ -57,28 +55,7 @@
 	  		</div>
 	  	</div>
 	  </div>
-    <a href="#" onclick="window.location.reload(true);" class="smoothScroll user_settingsclass="> <span class="fa fa-rotate-right page_refresh"></span></a>
-    <!--
-    <div class="bg_white hidden-sm hidden-xs">
 
-    	<div class="container">
-    		<div class="col-md-8 col-sm-9">
-    			<h3 class="welcome_title">WELCOME TO JLT</h3>
-    			We are an international group of Risk Specialists and Benifits Consultants and one of the largest companies of its type in the world. We offera a distinctive choice to our clients and partners through our combination of independence, scale and specialism.<br>
-    			The value we can create is driven trough the personal determination of our 7,000 highly motivated and skilled people.
-    		</div>
-    		<div class="col-md-4 col-sm-3">
-    			<h3 class="welcome_title">CATEGORIES</h3>
-          <div class="row home_categories">
-      			<i class="fa fa-chevron-right col-md-6"><span>Best Practices</span></i>	
-      			<i class="fa fa-chevron-right col-md-6"><span>Case Studies</span></i>
-      			<i class="fa fa-chevron-right col-md-6"><span>People</span></i>
-      			<i class="fa fa-chevron-right col-md-6"><span>Services</span></i>
-      			<i class="fa fa-chevron-right col-md-6"><span>Gallery</span></i>
-          </div>
-    		</div>
-    	</div>
-    </div> -->
   	<!-- <footer class=" hidden-sm hidden-xs" style="position:fixed; bottom:0; text-align: center;">JLT &copy; 2014. All rights reserved.</footer> -->
     <script src="assets/js/local.js"></script>
     <script src="assets/js/login.js"></script>
@@ -103,13 +80,6 @@
           }catch(e){
             console.log("Exception on device ready...." + e);
           }     
-        }  
-        setLocalStorage("currentBaseUrl", "http://ec2-54-69-156-225.us-west-2.compute.amazonaws.com:8080");
-        var udetail = $.parseJSON(getLocalStorage("currentUserDtl"));
-        if (udetail !== null){
-          $("#loginUser").val(udetail.name);
-          $("#loginPassword").val(udetail.pass);
-          $("input[type='checkbox']")[0].checked = true;
         }
       });
     </script>

@@ -1,0 +1,291 @@
+/* here you can put your own css to customize and override the theme */
+
+/* For the ROLE navigation - JP 1/6/14 */
+.navbar-inverse {
+	background-color:#3f3c3c !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color:#efefef;
+}
+
+.header .hor-menu {
+	margin: 0 0 0 -10px;
+}
+
+.header .hor-menu ul.nav li a {
+  font-size:11px;
+  padding: 11px 7px;
+
+}
+
+.header .hor-menu ul.nav li {
+  position: relative;
+}
+.header .hor-menu .dropdown-menu {font-size:13px; background:#3f3c3c;}
+
+.header .hor-menu .dropdown-menu li > a:hover,
+.header .hor-menu .dropdown-menu li:hover > a,
+.header .hor-menu .dropdown-menu li.active > a {
+	/*background: #ed7a23 !important;*/
+	background:#3b60af !important;
+	color: #fff;
+	filter:none !important;
+}
+
+
+.header .hor-menu ul.nav li.active > a,
+.header .hor-menu ul.nav li.active > a:hover {
+	/* background: #ed7a23 !important; */
+	background:#3b60af !important;
+} 
+
+.header .hor-menu ul.nav li.active .selected {
+	bottom:0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	/* border-top: 6px solid #ed7a23; */
+	border-top:6px solid #3b60af;
+	display: inline-block;
+	height:0px;
+	left: 50%;
+	margin: 0;
+	margin-left: -7px;
+	margin-bottom:-6px;
+	position: absolute;
+	width: 0px;
+}
+
+.header .hor-menu ul.nav li a:hover,
+.header .hor-menu ul.nav li a:focus {
+	background: #2d2d2d;
+}
+
+
+.header .hor-menu ul.platform li.active > a,
+.header .hor-menu ul.platform li > a:hover	{
+	/* background-color:#777 !important;*/
+	background-color:#ddd !important;
+	color: #000;
+}
+
+.header .hor-menu ul.platform li > a:hover	{
+	/* background-color:#777 !important;*/
+	background-color:#3b60af !important;
+	color: #fff;
+}
+
+
+.header .hor-menu ul.nav li a {
+	padding: 11px 9px 11px 15px;
+}
+
+.header .hor-menu .dropdown-menu li > a {
+	color: #eee;
+}
+	
+.header .hor-menu ul.nav:first-child {
+	margin-left:0px;
+	padding-left:10px;
+}
+
+.header .hor-menu.role {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.header .hor-menu ul.platform li.active > a:hover {
+	background: #ddd !important; color:#000;
+}
+
+.header .hor-menu ul.platform ul {background:#ddd}
+.header .hor-menu ul.platform ul a {color:#000}
+
+.header .hor-menu ul.platform .selected{		
+	bottom: 50%;
+	border-left: 10px solid #ddd;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	display: inline-block;
+	height: 0px;
+	margin: 0;
+	margin-bottom: -10px;
+	position: absolute;
+	width: 0px;
+	z-index: 2;
+	
+	}
+	 
+	 
+/* Getting the Adrenalin logo in place for the example - JP 1/6/14 */
+	.header .navbar-brand,
+	.header .navbar-brand:active	{
+		background:#fff !important;
+		margin-top:-2px;
+		padding:0;
+		height:44px;
+		width:120px;
+	}
+
+		
+/* helplink fixes - JP 8/26/14 */
+
+/*ul.users {background:#f00;}
+
+.header .navbar-nav ul.users li.dropdown .dropdown-toggle {margin:0px 0px 0px 0px; padding:0px 0px 0px 0px};
+		
+		
+.header .nav > li > .dropdown-menu:before,
+.header .nav > li > .dropdown-menu:after {
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+
+}
+	
+/* Cross platform navigation menu - JP 1/7-8/14 */
+
+
+		
+	
+#sites {
+	border-bottom: 1px solid #dedede;	
+	display:none;  /* starts top drawer closed */	
+}
+	
+#sites ul {
+	margin: 0 0 0;
+	padding: 7px 0px 7px;
+	text-align:left;
+}
+	
+#sites li {
+	color: #7c717a;
+	display: inline-block;
+	margin: 0 0 0;
+	padding: 7px 7px 0px 4px;
+	text-align: left;
+	vertical-align:top;
+}
+	
+#sites ul li a:link,
+#sites ul li a:visited	{
+	color:#999;
+}
+	
+#sites ul li a:hover,
+#sites ul li a:active,
+#sites ul li a.active	{
+	color:#fff; text-decoration:none;
+}
+		
+
+.header .navbar-nav {
+	margin-right:5px; /* this fixes a gap in the nav bar */
+}
+	
+
+/* That @#$%ing toggle link JP 1/9/14 */
+i.toggle {
+	display:inline-block;
+}
+	
+i.toggle a:link,
+i.toggle a:visited,
+i.toggle a:hover,
+i.toggle a:active {
+/* padding:3px 7px; */
+	color:#000;
+	text-decoration:none;
+}
+	
+/* Body fix */
+.page-header-fixed .page-container {
+	margin-top: -10px;
+}
+
+/* breadcrumb fix */
+.page-content ul.page-breadcrumb.breadcrumb {
+	background-color:#fff;
+	margin:0px;
+	padding:0px 0px 10px 0px;
+	font-size:16px;
+}
+
+ul.page-breadcrumb.breadcrumb li:last-child a {
+	font-weight:600;
+	font-size:1em;
+}
+
+small.timestamp {
+	color:#666;
+	padding-bottom:10px;}
+
+
+
+/* footer link fix */
+div.footer a {color:#999;
+	}
+
+.col-md-12 p {
+	width: 100%;
+	height: 45px;
+	border: 2px solid rgb(236, 236, 244);
+	padding-left: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 10px !important;
+	padding-top: 12px;
+	background-color: rgba(128, 128, 128, 0.1);
+}
+
+.portlet_icon {
+	float: right;
+	font-size: 30px;
+	margin-top: 4px;
+	color: white;
+}
+
+.portlet_icon_off{
+	float: right;
+	font-size: 30px;
+	margin-top: 15px;
+	color: white;	
+}
+
+.header_title{
+	font-size: 20px;
+	color: white;
+	margin-top: 5px !important;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+
+.l_arrow_wrap, .r_arrow_wrap{
+	position: absolute;
+	height: 100%;
+	width:4rem;
+	z-index: 1;
+	left:0;
+}
+.r_arrow_wrap{
+	right:0;
+	left:auto;
+}
+.l_arrow, .r_arrow{
+	position: absolute;
+	top: 47%;
+	background: rgba(63, 54, 54, 0.19);
+	height: 4rem;
+	width: 3rem;
+	left: 0;
+	font-size: 16px!important;
+	line-height: 4rem!important;
+	text-align: center;
+	z-index: 11;
+}
+.r_arrow{
+	right:0;
+	left: auto;
+}

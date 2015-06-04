@@ -1,0 +1,1086 @@
+.btnHolderPrimary,.btnHolderSecondary,.btnHolderLong,.btnHolderShort,.btnHolderQuaternary
+{
+	display:inline;
+	
+	line-height:32px;
+}
+
+.btnHolderTertiary
+{
+display:inline;
+
+line-height:25px;
+}
+
+.btnHolderInlineDelete,.btnHolderInlineAdd
+{
+line-height:18px;
+padding-bottom:15px;
+}
+
+.btnHolderInlineDelete
+{
+margin-left: -13px;
+}
+
+li>.btnHolderInlineAdd, #alert_escalations
+{
+    margin-left: -4px;
+    margin-top: 2px;
+    padding-bottom: 20px;
+}
+
+#password .btnHolderTertiary, .cron-btn
+{
+    display: block;
+    margin-left: -4px;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.btnHolderLong
+{
+	padding-right:150px;
+}
+.btnHolderShort
+{
+	padding-right:100px;
+}
+.btnHolderShorter
+{
+	padding-right:40px;
+}
+
+/* Primary and Secondary Button styles */
+a.btnPrimary, a.btnPrimary span, a.btnSecondary, a.btnSecondary span
+
+{
+	background-image: url(../images/btn-primary-secondary.gif);
+	font: bold 15px Trebuchet MS,Arial,Sans-serif;
+	color: #eee;
+}
+a.btnSecondary, a.btnSecondary span
+{true
+	font-size:13px;
+	color:#eee;
+	font-weight:normal;
+}
+
+a.btnPrimary, a.btnSecondary
+{
+    padding-left: 11px;
+}
+
+a.btnPrimary:hover span, a.btnSecondary:hover span
+{
+    color: #fff;
+}
+  
+a.btnPrimary span
+{
+	line-height: 1.6em;
+	height:30px;
+}
+
+a.btnSecondary span
+{
+	line-height: 1.7em;
+	height:30px;
+}
+
+a.btnPrimary .btnInnerSpan, a.btnSecondary .btnInnerSpan
+{
+	margin-right: 9px;
+	background-position: 0 -62px;
+}
+
+.btnDisabled a.btnPrimary, .btnDisabled a.btnPrimary span, .btnDisabled a.btnSecondary, .btnDisabled a.btnSecondary span
+{
+    background-image: url(../images/btn-primary-secondary-disabled.gif);
+	color: #929292;
+	cursor: default !important;
+}
+
+/* Helps maintain button height when font is decreased in FF, but don't show it to IE6 */
+html[xmlns] a.btnPrimary .btnInnerSpan, html[xmlns] a.btnSecondary .btnInnerSpan
+{
+   	height:31px;
+}
+
+/* Tertiary Button styles */
+a.btnTertiary, a.btnTertiary span
+{
+	background-image: url(../images/btn-tertiary.gif);
+	font: normal 12px Trebuchet MS,Arial,Sans-serif;
+ 	color: #eee;
+	line-height:1.5em;
+	height:23px;
+}
+
+a.btnTertiary
+{
+    padding-left: 8px;
+}
+
+a.btnTertiary:hover span
+{
+    color: #fff;
+}
+  
+a.btnTertiary .btnInnerSpan
+{
+    margin-right: 5px;
+    background-position: 0 -62px;
+}
+
+.btnDisabled a.btnTertiary, .btnDisabled a.btnTertiary span
+{
+    background-image: url(../images/btn-tertiary-disabled.gif);
+	color: #929292;
+	cursor: default !important;
+}
+
+/* Helps maintain button height when font is decreased in FF, but don't show it to IE6 */
+html[xmlns] a.btnTertiary .btnInnerSpan
+{
+   	height:30px;
+}
+
+
+/* Inline Delete button styles */
+a.btnInlineDelete, a.btnInlineDelete span
+{
+   	background-image: url(../images/btn-inline-delete.gif);
+    font: normal 12px Trebuchet MS,Arial,Sans-serif;
+    color: #eee;
+    text-transform:none;
+	line-height:1.6em;
+	height:23px;
+}
+
+a.btnInlineDelete
+{
+	padding-left: 6px;
+}
+
+a.btnInlineDelete:hover span
+{
+    color: #fff;
+}
+
+a.btnInlineDelete .btnInnerSpan
+{
+    margin-right: 23px;
+    background-position: 0 -62px;
+}
+
+.btnDisabled a.btnInlineDelete, .btnDisabled a.btnInlineDelete span
+{
+    background-image: url(../images/btn-inline-delete-disabled.gif);
+	color: #929292;
+	cursor: default !important;
+}
+
+/* Helps maintain button height when font is decreased in FF, but don't show it to IE6 */
+html[xmlns] a.btnInlineDelete .btnInnerSpan
+{
+   	height:22px;
+}
+
+
+/* Inline Add button styles */
+a.btnInlineAdd, a.btnInlineAdd span
+{
+   	background-image: url(../images/btn-inline-add.gif);
+   	font: normal 12px Trebuchet MS,Arial,Sans-serif;
+   	color: #eee;
+   	text-transform:none;
+	line-height:1.6em;
+	height:23px;
+}
+
+a.btnInlineAdd
+{
+    padding-left: 6px;
+}
+
+a.btnInlineAdd:hover span
+{
+    color: #fff;
+}
+
+a.btnInlineAdd .btnInnerSpan
+{
+    margin-right: 23px;
+    background-position: 0 -62px;
+}
+
+.btnDisabled a.btnInlineAdd, .btnDisabled a.btnInlineAdd span
+{
+    background-image: url(../images/btn-inline-add-disabled.gif);
+	color: #929292;
+	cursor: default !important;
+}
+
+/* Helps maintain button height when font is decreased in FF, but don't show it to IE6 */
+html[xmlns] a.btnInlineAdd .btnInnerSpan
+{
+   	height:22px;
+}
+
+
+/* Quaternary Button styles */
+a.btnQuaternary, a.btnQuaternary span
+{
+    background-image: url(../images/btn-quaternary.gif);
+    font: normal 12px Trebuchet MS,Arial,Sans-serif;
+    color: #eee;
+    line-height:1.3em;
+}
+
+a.btnQuaternary:hover span
+{
+    color: #fff;
+}
+  
+a.btnQuaternary .btnInnerSpan
+{
+    background-position: 0 -62px;
+}
+
+.btnDisabled a.btnQuaternary, .btnDisabled a.btnQuaternary span
+{
+    background-image: url(../images/btn-quaternary-disabled.gif);
+	color: #929292;
+	cursor: default !important;
+}
+
+/* Helps maintain button height when font is decreased in FF, but don't show it to IE6 */
+html[xmlns] a.btnQuaternary .btnInnerSpan
+{
+   	height:30px;
+}
+
+.btnOK
+{
+	background-image:url(../images/btn-ok.png);
+	height:20px;
+	width:27px;
+	margin-right:5px;
+	float:left;
+}
+
+.btnGo
+{
+	background-image:url(../images/btn-go.png);
+	height:20px;
+	width:27px;
+	margin-right:5px;
+	float:left;
+}
+
+.btnArrow
+{
+	background-image:url(../images/btn-arrow.png);
+	height:20px;
+	width:22px;
+	margin-right:5px;
+	float:left;
+}
+
+.icon-OK
+{
+	background-image:url(../images/icon-ok.png);
+	height:20px;
+	width:20px;
+	display: block;
+}
+
+.icon-not-OK
+{
+	background-image:url(../images/icon-not-ok.png);
+	height:18px;
+	width:18px;
+	display: block;
+}
+
+.icon-in-process
+{
+	background-image:url(../images/icon-in-process.png);
+	height:20px;
+	width:20px;
+	display: block;
+}
+
+.icon-completed
+{
+	background-image:url(../images/icon-completed.png);
+	height:24px;
+	width:24px;
+	display: block;
+}
+
+.icon-error
+{
+	background-image:url(../images/icon-error.png);
+	height:20px;
+	width:20px;
+	display: block;
+}
+
+.icon-warning
+{
+	background-image:url(../images/icon-warning.png);
+	height:20px;
+	width:20px;
+	display: block;
+}
+
+.icon-info
+{
+	background-image:url(../images/icon-info.png);
+	height:19px;
+	width:20px;
+	display: block;
+}
+
+.icon-info-alt
+{
+	background-image:url(../images/icon-info-alt.png);
+	height:16px;
+	width:16px;
+	display: block;
+}
+
+.icon-move-arrow-up-on
+{
+	background-image:url(../images/icon-move-arrow-up-on.png);
+	height:16px;
+	width:22px;
+	display: block;
+}
+
+.icon-move-arrow-up-off
+{
+	background-image:url(../images/icon-move-arrow-up-off.png);
+	height:16px;
+	width:22px;
+	display: block;
+}
+
+.icon-move-arrow-down-on
+{
+	background-image:url(../images/icon-move-arrow-down-on.png);
+	height:16px;
+	width:22px;
+	display: block;
+}
+
+.icon-move-arrow-down-off
+{
+	background-image:url(../images/icon-move-arrow-down-off.png);
+	height:16px;
+	width:22px;
+	display: block;
+}
+
+.icon-move-top
+{
+	background-image:url(../images/icon-move-top.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-move-bottom
+{
+	background-image:url(../images/icon-move-bottom.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-user-in
+{
+	background-image:url(../images/icon-user-in.png);
+	height:22px;
+	width:27px;
+	display: block;
+}
+
+.icon-user-out
+{
+	background-image:url(../images/icon-user-out.png);
+	height:22px;
+	width:27px;
+	display: block;
+}
+
+.icon-user-locked
+{
+	background-image:url(../images/icon-user-locked.png);
+	height:22px;
+	width:27px;
+	display: block;
+}
+
+.icon-processing-small
+{
+	background-image:url(../images/icon-processing-small.gif);
+	height:16px;
+	width:16px;
+	display: block;
+}
+
+.icon-processing-medium
+{
+	background-image:url(../images/icon-processing-medium.gif);
+	height:32px;
+	width:32px;
+	display: block;
+}
+
+.icon-processing-large
+{
+	background-image:url(../images/icon-processing-large.gif);
+	height:66px;
+	width:66px;
+	display: block;
+}
+
+.icon-number-01
+{
+	background-image:url(../images/icon-number-01.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-02
+{
+	background-image:url(../images/icon-number-02.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-03
+{
+	background-image:url(../images/icon-number-03.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-04
+{
+	background-image:url(../images/icon-number-04.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-05
+{
+	background-image:url(../images/icon-number-05.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-06
+{
+	background-image:url(../images/icon-number-06.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-07
+{
+	background-image:url(../images/icon-number-07.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-08
+{
+	background-image:url(../images/icon-number-08.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-09
+{
+	background-image:url(../images/icon-number-09.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-number-10
+{
+	background-image:url(../images/icon-number-10.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-help
+{
+	background-image:url(../images/icon-help.png);
+	height:20px;
+	width:20px;
+	display: block;
+}
+
+.icon-clock
+{
+	background-image:url(../images/icon-clock.png);
+	height:22px;
+	width:22px;
+	display: block;
+}
+
+.icon-calendar
+{
+	background-image:url(../images/icon-calendar.png);
+	height:19px;
+	width:19px;
+	display: block;
+}
+
+.icon-remove
+{
+	background-image:url(../images/icon-remove.png);
+	height:18px;
+	width:18px;
+	display: block;
+}
+
+.icon-remove-disabled
+{
+	background-image:url(../images/icon-remove-disabled.png);
+	height:18px;
+	width:18px;
+	display: block;
+}
+
+.icon-folder-open
+{
+	background-image:url(../images/icon-folder-open.png);
+	height:17px;
+	width:19px;
+	display: block;
+}
+
+.icon-folder-closed
+{
+	background-image:url(../images/icon-folder-closed.png);
+	height:17px;
+	width:19px;
+	display: block;
+}
+
+.icon-page
+{
+	background-image:url(../images/icon-page.png);
+	height:18px;
+	width:18px;
+	display: block;
+}
+
+.icon-graph
+{
+	background-image:url(../images/icon-graph.png);
+	height:20px;
+	width:20px;
+	display: block;
+}
+
+.good-example, .bad-example
+{
+	width:500px;
+	margin-left:20px;
+}
+
+.icon-example-good-symbol, .icon-example-bad-symbol
+{
+	background-image:url(../images/icon-example-good-symbol.png);
+	height:46px;
+	margin-bottom:-40px;
+	margin-left:-10px;
+	position:relative;
+	width:46px;
+}
+
+.icon-example-bad-symbol
+{
+	background-image:url(../images/icon-example-bad-symbol.png);
+}
+
+.good-example p, .bad-example p
+{
+	padding-bottom:15px;
+	padding-top:20px;
+}
+
+
+/* Common styles */
+
+.headerTable a.btnAnchor, .headerTable #button
+{
+	margin-left: -4px !important;
+}
+
+a.btnAnchor
+{
+    -moz-user-select: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    cursor: hand;
+    text-align: center !important;
+    background-color: transparent !important;
+    position: relative !important;
+    display: inline !important;
+    z-index:1;
+    float:left;
+    margin-right:8px;
+}
+
+.btnInnerSpan
+{
+    padding: 0 11px !important;
+    font: normal 12px Arial, Verdana;
+    white-space:nowrap;
+}
+
+.btnAnchor
+{
+    border: 0 !important;
+}
+.btnAnchor span
+{
+    display: -moz-inline-box;
+    display: block;
+    border: 0 !important;
+}
+
+.btnAnchor .btnOuterSpan
+{
+    background-position: right 0;
+    background-repeat: no-repeat;
+}
+
+.btnAnchor .btnInnerSpan
+{
+    background-repeat: repeat-x;
+}
+
+.btnRealButton
+{
+    filter: alpha(opacity=0);
+    -moz-opacity: .0;
+    opacity: .0;
+}
+
+a.btnAnchor:focus,
+a.btnAnchor:active
+{
+    border: dotted 1px #131627;
+}
+
+/* Move the real buttons aside */
+.input,.button
+{
+    position: absolute;
+    left: -999999px;
+}
+
+/* Handle cases with short button text */
+.btnAnchor
+{
+    /*_width: 54px;
+    min-width: 54px;*/
+}
+
+/* Handle very short text in buttons Safari and Opera */
+.btnRealButton
+{
+    /*min-width: 54px !important;
+    min-width: 25px !important;*/
+    font-size: 1px;
+    min-width: 2px !important;
+    z-index:1; /*must be less than value for btnAnchor class or hover will not work right in FF */    
+}
+
+/* Internet Explorer */
+*+html .btnRealButton,
+*+html .btnAnchor
+{
+    min-width: auto !important;
+}
+
+/*
+ * Begin : Added by Michael Lucero
+ * for Action Dropdown
+ */
+.admMainButton
+{
+    position: absolute;
+    width: 235px;
+    height: 10px;
+}
+.admMainButton #button
+{
+    height: 19px;
+    margin: 0px 5px 20px 0px;
+}
+.admMainButtonLeft #button
+{
+    float: left;
+}
+.admMainButtonLeft .admItemList
+{
+    float: left;
+    clear: both;
+}
+.admMainButtonRight #button
+{
+}
+.admItemList
+{
+    position: relative;
+    float: right;
+    display: none;
+    margin-top: -20px;
+    z-index: 100;
+}
+.admMainButtonLeft #list
+{
+    margin-left:-6px;
+}
+.admItems {
+        display: none;
+        z-index: 10;
+        position: absolute;
+        margin-top: 19px;
+        margin-right: 50px;
+    }
+    
+.admactionItem {
+    font-family: Arial, Sans-serif;
+		font-weight: normal;
+		font-size: 13px;
+		color: #3e3e3e;
+		/*width: 153px;*/
+		margin-left: 6px;
+		border-style: solid;
+		border-color: #000000 #35409c #b0b0e8 #000000;
+		border-width: 0px 1px 1px 0px;
+		cursor: hand;
+		cursor: pointer;
+		background: #ffffff;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		text-decoration:none;
+}
+
+.admactionItem div:hover {
+	color:#06286b;
+	background: url('../images/Drop-down-button-highlight.jpg') no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+}
+
+.admactionDisableItemForNode {
+    font-family: Arial, Sans-serif;
+		font-weight: normal;
+		font-size: 13px;
+		color: #3e3e3e;
+		/*width: 153px;*/
+		margin-left: 6px;
+		border-style: solid;
+		border-color: #000000 #35409c #b0b0e8 #000000;
+		border-width: 0px 1px 1px 0px;
+		cursor: hand;
+		cursor: pointer;
+		background: #ffffff;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		text-decoration:none;
+}
+
+.admactionDisableItemForNode div:hover {
+	background-size: cover;
+	-moz-background-size: cover;
+}
+
+.admactionDisableItemForNode a {
+    color: #3e3e3e;
+    text-decoration:none;
+}
+.admactionDisableItemForNode div {
+    padding: 4px 20px 4px 20px;
+}    Test
+.admactionDisableItemForNode a div {
+    padding: 4px 20px 4px 20px;
+}    
+
+.admwidgetactionItem {
+    font-family: Arial;
+		font-weight: normal;
+		font-size: 11px;
+		color: #282828;
+		/*width: 153px;*/
+		/*margin-left: 6px;*/
+		border-style: solid;
+		border-color: #bababa #bababa #bababa #bababa;
+		border-width: 1px 1px 0px 1px;
+		cursor: hand;
+		cursor: pointer;
+		background: #f6f7fb;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		text-decoration:none;
+}
+
+.admwidgetdeleted {
+        text-decoration: line-through;
+    }
+
+.admwidgetdisabled {
+        color: #878787;
+        background: #eeeeee;
+        cursor: default;
+    }
+
+
+
+.admwidgetactionItem a {
+    color: #282828;
+    text-decoration:none;
+}
+.admwidgetactionItem div {
+    padding: 4px 10px 4px 10px;
+}    
+.admwidgetactionItem a div {
+    padding: 4px 10px 4px 10px;
+}
+
+.admwidgetselected {
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 11px;
+    color: #ffffff;
+    background: #3f5291;
+	background-size: cover;
+	-moz-background-size: cover;
+    }
+
+.admwidgetselected a{
+        font-family: Arial;
+            font-weight: normal;
+            font-size: 11px;
+            color: #ffffff;
+        background: #3f5291;
+	background-size: cover;
+	-moz-background-size: cover;
+    }
+
+
+.admwidgettop {
+        /*margin-left: 5px;*/
+        border-top: 1px #bababa;
+    }
+
+.admwidgetleft {
+        /*width: 6px;*/
+        /*background-image: url("../images/adm-left.png");*/
+        border-left: 1px #777777;
+		width: 100%;
+		max-width: 200px
+    }
+
+.admwidgetbottom {
+        /*height: 6px;*/
+        /*background-image: url("../images/adm-bottom.png");*/
+        border-bottom: 1px #bababa solid;
+    }
+
+
+.admactionItem a {
+    color: #3e3e3e;
+    text-decoration:none;
+}
+.admactionItem div {
+    padding: 4px 20px 4px 20px;
+}    Test
+.admactionItem a div {
+    padding: 4px 20px 4px 20px;
+}    
+    .admdeleted {
+        text-decoration: line-through;
+    }
+    
+    .admdisabled {
+        color: #878787;
+        background: #eeeeee;
+        cursor: default;
+    }
+
+    .admdisabled div:hover {
+        color: #878787;
+        background: #eeeeee;
+        cursor: default;
+    }
+    
+    .admtop {
+        margin-left: 5px;
+        border-top: 1px solid #35409c;
+    }
+    
+    .admleft {
+        width: 6px;
+        background-image: url("../images/adm-left.png");
+		width: 100%;
+		max-width: 200px
+    }
+    
+    .admbottom {
+        height: 6px;
+        background-image: url("../images/adm-bottom.png");
+    }
+    
+    .admbuttonleft {
+        background-image: url('../images/adm-button-left.gif');
+        padding: 0px 0px 0px 0px;
+        height: 24px;
+        width: 4px;
+        background-repeat: no-repeat;
+        float: right;
+    }
+    
+    .admbuttoncenter {
+        background-image: url('../images/adm-button-middle.gif');
+        padding: 1px 10px 0 15px;
+        height: 24px;
+        background-repeat: repeat-x;
+        float: right;
+        font-family: Trebuchet MS, Arial, Sans-serif;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    
+    .admbuttonright {
+        background-image: url('../images/adm-button-right.gif');
+        padding: 5px;
+        height: 24px;
+        width: 13px;
+        background-repeat: no-repeat;
+        float: right;
+    }
+
+    .admwidgetmenu {
+        background-image: url('../images/icon-widget-arrow-normal.gif');
+        padding: 1px;
+        height: 15px;
+        width: 20px;
+        background-repeat: no-repeat;
+        float: right;
+    }
+   
+
+    .admwidgetmenu:hover {
+        background-image: url('../images/icon-widget-arrow-hover.gif');
+    }
+
+
+
+	
+	.admanchor
+	{
+		color: #eeeeee;
+		text-decoration: none;
+	}
+
+	.admanchor:hover
+	{
+		color: #ffffff;
+	}
+
+/*
+ * End : Added by Michael Lucero
+ * for Action Dropdown
+ */
+
+/**********************************/
+/* Create Software Configuration button */
+/**********************************/
+
+a.create_config_btn {
+    background: transparent url(../images/tree-add-button-stacked.png) no-repeat scroll top right;
+	color:#716e6e;
+    display: block;
+    float: left;
+    font: normal 11px arial, sans-serif;
+    height: 16px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none !important;
+    margin-left:2px;
+    position:relative;
+    z-index:100;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.create_config_btn span {
+    background: transparent url(../images/tree-add-button-stacked.png) no-repeat;
+    display: block;
+    padding: 1px 0 1px 6px;
+    margin-left:-2px;
+}
+
+a.create_config_btn:hover {
+    color:#4d4d4d;
+    outline: none; /* hide dotted outline in Firefox */
+    margin-top:-16px;
+    padding-top:16px;
+}
+a.create_config_btn:active {
+    outline: none; /* hide dotted outline in Firefox */
+}
+a.create_config_btn:hover span {
+    margin-top:-16px;
+    padding: 17px 0 1px 6px; /* push text down 1px */
+}
+
+.jquery-table-button{
+    float: left;
+    margin-top: -24px;
+    position: relative;
+    top: 23px;
+    z-index: 1;
+}
+
+.tooltip {
+	display:none;
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
+}
+
+.ieSpecific{
+       /* IE6, IE7, IE8, IE9 */
+        top: 92px\9;
+}
+
+.ieSpecificButtons{
+       /* IE6, IE7, IE8, IE9 */
+        margin-top: -25px\9;
+        left: 25px\9;
+}

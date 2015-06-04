@@ -85,17 +85,11 @@ $(document).ready(function (){
 
 $("#btnLogin").click(function (){
 
+  $(".loading").show();
 
   var uname = $("#loginUser").val();
   var upass = $("#loginPassword").val();
-
-  // check if user is same a previous one
-  var currUser = $.parseJSON(localStorage.getItem('currentUserDtl'));
-  if (currUser !== null){
-    if (uname !== currUser.name){
-      localStorage.clear();
-    }
-  }
+  
 
   var appStr = window.location.href;
   var appStrArr = appStr.split("/");
@@ -114,10 +108,14 @@ $("#btnLogin").click(function (){
   if(uname === '' || upass === ''){
     displayError("Please enter valid username/password", 'Error');
     return;
+  }  
+
+  if(uname === 'test' || upass === 'test'){
+    $(".loading").hide();
+    window.location.href = "home.html";
   }
 
-  $(".loading").show();
-
+/*
   var baseurl = getBaseURL();
 
   if ($("input[type='checkbox']")[0].checked == false){
@@ -148,12 +146,10 @@ $("#btnLogin").click(function (){
           crossDomain: true,
           cache: true,
           beforeSend: function( xhr ) {
-            //$(".loading").show();
           },
           success: function(data, textStatus) {
             $(".loading").hide();
             console.log(data);
-            //alert(data.authRequired);
             if (data.status == 'success'){
               var today = new Date(); var expires = new Date();
               expires = new Date(expires.setDate(today.getDate() + 14));
@@ -163,20 +159,14 @@ $("#btnLogin").click(function (){
             }else{
               displayError("Invalid username or password. please try again.", 'Error');
             }
-            //if (data.status == 'success'){
-            //  localStorage.setItem("currentUserDtl", JSON.stringify({"name": uname, "pass":  upass}));
-              //window.location.href = "home.html";
-            //}
           },
           error: function (responseData, textStatus, errorThrown) {
             $(".loading").hide();
-              //displayError("Unable to ping server, you may have to login again...", 'Error');
               console.log('Ajax Request failed. ' + errorThrown);
-              //window.location.href = "index.html";
           }
       });
   } else {
     $(".loading").hide();
     alert("Please check your internet connection and try again later...");
-  }
+  }*/
 })

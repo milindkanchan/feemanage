@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>BPM project</title>
+    <title>Fees Management</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -41,146 +41,60 @@
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
 
-    	<div class="loading" style="display:none;">
-      		Loading&#8230;
-    	</div>
-    	<div class="net_status" style="display:none;"></div>
+    <div class="loading" style="display:none;">Loading&#8230;</div>
+    <div class="net_status" style="display:none;"></div>
 	
 		<!-- Topbar -->
 		<div class="topbar fixed">
-			<div class="topbar_wrap">
-				<a href="home.html" class="logo left">
-					Group <b>BPM</b>
-				</a>
+			<div class="topbar_wrap">				
+        <div class="left nav_section">          
+          <div class="bar_icon left"><i class="fa fa-chevron-left fa-2x"></i></div>
+          <div class="right nav_ver_divider"></div>
+        </div>
+        <div class="left nav_section">          
+              Fees Management      
+        </div>          
 				<div class="right search_section">
-					<div class="category left hidden-xs">
-						<select id="selectCategoryList">
-							<option value="" disabled selected></option>
-						</select>
-					</div>
-					<div class="search left">
-						<i class="fa fa-search"></i>
-					</div>
 					<div class="left ver_divider"></div>
-					<input type="text" placeholder="enter your search" class="seach_field" style="display:none;">
-					<div class="bar_icon left" id="menuToggle"><i class="fa fa-bars" ></i></div>
+					<div class="bar_icon left" onclick='logout();' ><i class="fa fa-power-off fa-2x" ></i></div>
 				</div>
 			</div>
 		</div>	
 
-		<!-- slider -->
-		<div class="image_slider">
-			<!--div>
-				<img src="assets/img/home_img_1.jpg">
-				<div class="slider_content">
-					<h1>News</h1>
-					<h2>Nitesh Rungta Seconded as Center Head Kuala Lumpur</h2>
-					<a href="#" class="btn jlt_btn read_more_btn">Read More</a>
-					<a href="#" class="fa fa-rotate-right page_refresh"></a>
-					<p class="date"><i class="fa fa-calendar"></i>Sept 28, 2014</p>
-				</div>
-			</div>
-			<div>
-				<img src="assets/img/home_img_2.jpg">
-				<div class="slider_content">
-					<h1>News</h1>
-					<h2>Nitesh Rungta Seconded as Center Head Kuala Lumpur</h2>
-					<a href="#" class="btn jlt_btn read_more_btn">Read More</a>
-					<a href="#" class="fa fa-rotate-right page_refresh"></a>
-					<p class="date"><i class="fa fa-calendar"></i>Sept 28, 2014</p>
-				</div>
-			</div>
-			<div>
-				<img src="assets/img/home_img_3.jpg">
-				<div class="slider_content">
-					<h1>News</h1>
-					<h2>Nitesh Rungta Seconded as Center Head Kuala Lumpur</h2>
-					<a href="#" class="btn jlt_btn read_more_btn">Read More</a>
-					<a href="#" class="fa fa-rotate-right page_refresh"></a>
-					<p class="date"><i class="fa fa-calendar"></i>Sept 28, 2014</p>
-				</div>
-			</div-->
-		</div>
+		<!-- slider 
+		<div class="image_slider"></div> -->
 	
 		<div id="divCategory" class="row home_container card_list">
-			<div class="" id="divCategory"></div>
+			<div class="" id="divCategory">
+
+      </div>
 		</div>
-		<input type="hidden" id="pageOrient" value="">
-
-		<!-- This section is for Splash Screen -->
-		<div class="ole">
-		<section id="jSplash">
-			<div class="loader_circle">Loading...</div>
-			<!-- <div id="circle"></div> -->
-		</section>
-		</div>
-		<!-- End of Splash Screen -->
-
-
-		<!-- Side Menu -->
-
-		<nav class="menu" id="theMenu">
-			<div class="menu-wrap">
-				<span id="menuToggle"><i class="fa fa-bars" ></i></span>
-				<a href="#" class="smoothScroll collapse_txt">Collapse menu</a>
-				<div class="scroll">
-					<div class="profile_wrap">
-						<img id="imgProfile" src="assets/img/user-pic.jpg" class="left">
-						<div class="name" id="divUserName"></div>
-						<div class="desig">Group BPM</div>
-						<a href="#" onclick="userLogout();" class="logout_btn_wrap">
-          		<div class="btn log_out_btn jlt_btn">Log Out</div>
-        		</a>
-					</div>
-					<a href="#" id="linkNews" class="smoothScroll user_settings" ><span class="fa fa-newspaper-o"></span>News</a>
-            		<a href="#" id="linkFavourite" class="smoothScroll user_settings"><span class="fa fa-star"></span>Favourites</a>
-            		<a href="#" id="linkReadLater" class="smoothScroll user_settings"><span class="fa fa-clock-o"></span>Read Later</a>
-            		<a href="#" id="linkSetting" class="smoothScroll user_settings"><span class="fa fa-gear"></span>Settings</a>
-	        		<a href="#" class="smoothScroll user_settings user_help"><span class="fa fa-question"></span>Help</a>
-	      		</div>
-			</div>
-		</nav>
 		
-	  	<script src="assets/js/jquery.min.js"></script>
+	  <script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.alerts.js"></script> 
 		<script src="assets/js/jquery.cookie.js"></script>
 		<script src="assets/js/local.js"></script>
 		<script src="assets/js/local_storage.js"></script>
 		<script src="assets/js/common.js"></script>
 		<script src="assets/js/classie.js"></script>
-  		<script src="assets/js/bootstrap.min.js"></script>
-  		<script src="assets/js/smoothscroll.js"></script>
+  	<script src="assets/js/bootstrap.min.js"></script>
+  	<script src="assets/js/smoothscroll.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/slick.min.js"></script>
 		<script src="assets/js/plugins.js"></script>
 		<script src="assets/js/select2.js"></script>
-	  	<script src="assets/js/jquery.mobile-events.min.js"></script>
+	  <script src="assets/js/jquery.mobile-events.min.js"></script>
+
 		<script>
-			var options = {
-			    password: null,
-			    flatUI: true,
-			    showShadows: true,
-			    enableThumbs: true,
-			    disableRetina: false,
-			    enablePreview: true,
-			    bookmarks: true,
-			    landscapeDoublePage: false,
-			    landscapeSingleFirstPage: true,
-			    toolbarBackgroundColor: null,
-			    textColor: null,
-			    enableShare: true
-			};
 			$(document).ready(function(){
 				$(".loading").show();
 				var deviceType = getLocalStorage("appDevice");
 				$(window).on("orientationchange",function(event){
 			    	if(event.orientation === "portrait"){ //Potrait
 			        	$("#pageOrient").val('horizontal');
-			            getCategoryList();           
 			        }
 			        else{
 			            $("#pageOrient").val('vertical');
-			            getCategoryList();
 			          }
 			    });	
 			    if(deviceType == "mobile"){			
@@ -192,9 +106,6 @@
 				        function onFileSystemSuccess(fileSystem) {
 				          	console.log("Cordova is ready on home ...." + fileSystem.name);
 				          	$(window).orientationchange();
-							getUserLoginDetails();
-					  		//getUserDetail();
-					  		showNews();
 				        }
 				        function fail(evt) {
 				        	console.log(evt.target.error.code);
@@ -204,33 +115,12 @@
 				    }
 			    }else{
 			  		$(window).orientationchange();
-					getUserLoginDetails();
-					//getUserDetail();
-					showNews();
 			    }
-
-
-			  	$(".loading").hide();
-			  	$('body').jpreLoader({
-					splashID: "#jSplash",
-					showSplash: true,
-					showPercentage: false,
-					autoClose: true,
-					splashFunction: function() {
-						$('.loader_circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
-					}
-			  	});
-
 			});
-			$("#selectCategoryList").select2({
-    		placeholder: "Categories"
-			});
-			$(".select2-container input").prop("readonly",true);
-
 
 			function reloadPage(){
-      			window.location.reload(true);
-    		}
+        window.location.reload(true);
+    	}
 		</script>
 	</body>
 </html>

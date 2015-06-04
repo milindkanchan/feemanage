@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+
+
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> 
+
+<html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+  <meta charset="utf-8" />
+  <title>SeaChange</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, maximum-scale=2.0, initial-scale=1.0, user-scalable=yes"/>
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  <meta name="MobileOptimized" content="320">
+  <!-- BEGIN GLOBAL MANDATORY STYLES -->        
+  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+  <!--[if lt IE 9]>
+      <script src="dist/html5shiv.min.js"></script>
+  <![endif]-->
+  <!-- END GLOBAL MANDATORY STYLES -->
+  <!-- BEGIN THEME STYLES --> 
+  
+  <link href="assets/css-new/style-metronic.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/css-new/style.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/css-new/style-responsive.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/css-new/plugins.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/css-new/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/> 
+  <link href="assets/css-new/custom.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/css-new/slick.css" rel="stylesheet">
+  <link href="assets/css-new/spinner.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css-new/bookblock.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css-new/demo.css" />
+    
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- BEGIN CORE PLUGINS -->   
+    <!--[if lt IE 9]>
+    <script src="/assets/plugins/excanvas.min.js"></script>
+    <script src="/assets/plugins/respond.min.js"></script>  
+    <![endif]-->  
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.js" type="text/javascript" ></script>
+    <!--<script src="assets/js/login.js" type="text/javascript"></script>-->    
+    <!--<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery.blockUI.js" type="text/javascript"></script>  
+    <script src="assets/plugins/jquery.cookie.js" type="text/javascript"></script>
+    <script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>-->
+    <!-- END CORE PLUGINS -->
+    <style type="text/css">
+      .bb-page > div,
+      .bb-outer,
+      .bb-content,
+      .bb-inner {
+        background: #ffffff;
+      }
+      .fa-rotate-right{
+        margin-left: 10px;
+        font-size: 20px;
+      }
+    </style>    
+    <script src="assets/js/modernizr.custom.js"></script>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-full-width">
+  <div class="loading" style="display:none;">
+    Loading&#8230;
+  </div>  
+  <!-- BEGIN HEADER -->   
+  <div class="header navbar navbar-inverse "><!-- remove class navbar-fixed-top -->
+    
+    <!-- BEGIN TOP NAVIGATION BAR -->
+    <div class="header-inner">
+      <!-- BEGIN LOGO -->
+      <div class="navbar-brand">
+        <img src="assets/img/logo-adrenalin.png" alt="logo" class="img-responsive" style="display:inline-block;"/> 
+      </div>       
+      <!-- END LOGO -->
+      <!-- BEGIN HORIZONTAL MENU -->
+      <!-- role facet menu -->
+      <div class="hor-menu role">
+        <i onclick="backButton();" class="fa fa-chevron-left portlet_icon"></i>
+      </div>
+
+      <!--<ul class="hor-menu role header_title">
+          Configurations
+      </ul>-->      
+      <!-- end platform facet menu -->
+      <!-- begin platform navigation menu --> 
+      <!-- BEGIN USER LOGIN DROPDOWN -->
+      <ul class="nav navbar-nav pull-right users ">
+        <li class="hor-menu dropdown">
+          <i onclick='logout();' class="fa fa-power-off portlet_icon_off"></i>
+      </li>
+      </ul>
+      <!-- END USER LOGIN DROPDOWN -->
+    </div>
+    <!-- END TOP NAVIGATION BAR -->
+  </div>
+  <!-- END HEADER -->
+  <div class="clearfix"></div>
+  <!-- BEGIN CONTAINER -->  
+  <div class="page-container" >
+      <div class="page-content">
+        <div class="image_slider"> 
+        </div>  
+      </div>  
+  </div>
+  
+  <!-- END CONTAINER -->
+  <!-- BEGIN CORE PLUGINS -->   
+  <!--[if lt IE 9]>
+  <script src="assets/plugins/excanvas.min.js"></script>
+  <script src="assets/plugins/respond.min.js"></script>  
+  <![endif]-->  
+  <script src="assets/js/slick.min.js" type="text/javascript"></script>
+  <script src="assets/js/common.js" type="text/javascript"></script>
+  <script src="assets/js/widget.js" type="text/javascript"></script>
+  <script src="assets/js/configuration.js" type="text/javascript"></script>
+  <script src="assets/js/alerts.js" type="text/javascript"></script>
+  <script src="assets/js/login.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.bookblock.js"></script>
+  <script>
+    $(document).ready(function(){
+      var widgetId = getUrlParams();
+      var widgetType = getExtraUrlParams();
+      showWidgetSetting(widgetId, widgetType);
+
+      $("#selectCategoryList").change(function(){
+        window.location.href = this.value;
+      });            
+    });
+    function backButton(){
+      window.location.href = "home.html";
+    }    
+  </script>
+  <!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

@@ -224,17 +224,18 @@ input, textarea{
 	margin: 20px 0;
 	max-width: 160px;
 }
-.fa-bars, .fa-chevron-left{
+.fa-bars{
 	color: #ffffff;
 	font-size: 37px!important;
 	padding: 0 8px;
 	line-height: 65px!important;
 	float: left;
 }
+/*
 .fa-chevron-left{
 	padding-right:0;
 	padding-left:2px;
-}
+}*/
 .fa-rotate-right{
 	margin-top: -12px;
 	line-height: 65px!important;
@@ -355,20 +356,20 @@ input, textarea{
 	bottom: -1.5rem;
 }
 .topbar{
-	height:8rem;
+	height:5rem;
 	width:100%;
 	background: white;
 	overflow: hidden;
 	z-index: 10;
-	background: black;
+	background: rgb(24, 228, 220);
 	color: white;
 }
 .ver_divider{
 	line-height: 40px;
-	border-left: 2px solid grey;
-	height: 32px;
-	margin-top: 1.7rem;
-	padding: 0 1rem 0 0;
+	border-left: 3px solid white;
+	height: 50px;	
+	padding: 0 2rem 0 0;
+	margin-top: -14px;
 }
 .h_hide{
 	margin-top: -90px;
@@ -405,11 +406,28 @@ input, textarea{
 	color:white;
 }
 .category,.search, .bar_icon{
-	line-height: 65px;
+	line-height: 20px;
 }
 .search_section{
-	margin-right:10px;
+	margin-right:20px;
 }
+
+.nav_section{
+	margin-left:15px;
+}
+.nav_ver_divider{
+	line-height: 40px;
+	border-right: 3px solid white;
+	height: 50px;	
+	padding: 0 2rem 0 0;
+	margin-top: -14px;
+}
+
+.nav_section_title{
+	text-align: center;
+	background-color: white	
+}
+
 .fa-search{
 	padding: 0px 21px 0 31px;
 	line-height: 65px!important;
@@ -703,8 +721,7 @@ input, textarea{
 	padding:0 5px;
 	color:black;
 }
-.login_form .login_btn{
-	width:auto;
+.login_form .login_btn{	
 	padding: 1.4rem 4.8rem;
 	background: #68A320;
 	color:white;

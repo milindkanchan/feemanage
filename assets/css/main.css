@@ -493,6 +493,10 @@ input, textarea{
 .home_container{
 	padding-bottom:40px;
 }
+
+.home_gap_container{
+	padding-bottom:80px;
+}
 /*card images*/
 .card_container{
 	position: relative;
@@ -586,11 +590,14 @@ input, textarea{
 .home_card, .card_container a{
 	position: relative;
 	display: block;
-	min-height: 96px;
 }
 
 .home_card_container, .card_container{
-	border: none;
+	border: 2px solid white;
+	border-radius: 25px;
+
+	min-height: 96px;
+	width: 35%;
 }
 
 /*Login page*/
@@ -616,11 +623,19 @@ input, textarea{
 	margin-right: auto;
 	display: inherit;
 }
+
+.new_grid_form_wrap{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+
 .new_login_form_wrap{
 	position: absolute;
 	top: 50%;
 	width: 100%;
-	margin-top: -25rem;
+	margin-top: -17rem;
 }
 
 .new_login_form_wrap_setting{
@@ -1391,6 +1406,74 @@ footer{
 	height: 100%;
 	margin: 0 auto;
 }
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-fixed {
+    /* custom width */
+    width:320px;
+}
+.col-min {
+    /* custom min width */
+    min-width:320px;
+}
+.col-max {
+    /* custom max width */
+    max-width:320px;
+}
+
+[class*="col-"] {
+    padding-top:10px;
+    padding-bottom:15px;
+	border:1px solid #ffffff;
+	background:#ffffff;
+}
+[class*="col-"]:before {
+    display:block;position:relative;
+    margin-bottom:8px;
+	font-family:sans-serif;
+	font-size:10px;
+    letter-spacing:1px;
+    color:#658600;
+    text-align:left;
+}
+.item {
+    width:100%;
+    height:100%;
+	border:1px solid #cecece;
+    padding:16px 8px;
+	background:#ededed;
+	background:-webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
+	background:-moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+	background:-ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+}
+
+/* content styles */
+.item {
+	display:table;
+	border-radius:25px;
+}
+.content {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.content:before {
+    font-family:sans-serif;
+    font-size:12px;
+    letter-spacing:1px;
+    color:#747474;
+}
+
 .carousel-control{
 	position: static;
 }

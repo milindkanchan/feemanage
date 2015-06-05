@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=2.0, initial-scale=1.0, user-scalable=yes"/>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Fees Management</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/select2.css" rel="stylesheet">
+    <link href="assets/css/spinner.css" rel="stylesheet">
+    <link href="assets/css/jquery.alerts.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+    body{
+      background-color: #242324;
+    }
+    </style>
+    
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="cordova.js"></script>
+    <script src="PDFReader.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+    <div class="loading" style="display:none;">Loading&#8230;</div>
+    <div class="net_status" style="display:none;"></div>
+  
+    <!-- Topbar -->
+    <div class="topbar fixed">
+      <div class="topbar_wrap">       
+        <div class="left nav_section">          
+          <div class="bar_icon left"><i class="fa fa-chevron-left fa-2x" onclick="master_entry.html"></i></div>
+          <div class="right nav_ver_divider"></div>
+        </div>
+        <div class="left nav_section">          
+              Enrollments      
+        </div>          
+        <div class="right search_section">
+          <div class="left ver_divider"></div>
+          <div class="bar_icon left" onclick='index.html' ><i class="fa fa-power-off fa-2x" ></i></div>
+        </div>
+      </div>
+    </div>  
+
+    <!-- slider 
+    <div class="image_slider"></div> -->
+  
+    <div class="new_login_form_wrap_setting">
+      <div class="setting_form">
+        <div class="inner_login">
+          <label class="text-left">
+            <input type="text" placeholder="Student Name" id="sname">
+          </label>
+          <label class="text-left">
+            <select id="scource" class='form-control custom' placeholder = "Select Course"></select>
+          </label>
+          <label class="text-left">
+            <input type="text" placeholder="Course Fees" id="sfees">
+          </label>
+          <label class="text-left">
+            <input type="text" placeholder="Email" id="semail">
+          </label>
+          <label class="text-left">
+            <input type="text" placeholder="Contact No." id="scontact">
+          </label>
+<input type="button" class="btn jlt_btn" value="Submit" onclick="validateSettings();">
+        <div class="forgot_pass text-center" onclick="cancelSettings();">Cancel</div>          
+        </div>        
+      </div>
+      <span  class="alert-danger" id="lblError"></span>
+    </div>
+
+    <!-- <div id="divCategory" class="row">
+      <div class="col-sm-6">
+        <div class='card_container home_card_container'>
+          <a class='home_card' href='#'>
+            <img src='#' class='card_image'>
+          </a>  
+        </div>
+          </div>
+          <div class="col-sm-6">
+        <div class='card_container home_card_container'>
+          <a class='home_card' href='#'>
+            <img src='#' class='card_image'>
+          </a>  
+        </div>
+          </div>
+    </div> -->
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.alerts.js"></script> 
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/local.js"></script>
+    <script src="assets/js/local_storage.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/classie.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/select2.js"></script>
+    <script src="assets/js/jquery.mobile-events.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".loading").show();
+        var deviceType = getLocalStorage("appDevice");
+        $(window).on("orientationchange",function(event){
+            if(event.orientation === "portrait"){ //Potrait
+                $("#pageOrient").val('horizontal');
+              }
+              else{
+                  $("#pageOrient").val('vertical');
+                }
+          }); 
+          if(deviceType == "mobile"){     
+          try{
+              document.addEventListener("deviceready", onDeviceReady, false);
+                function onDeviceReady() {
+                    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
+                }
+                function onFileSystemSuccess(fileSystem) {
+                    console.log("Cordova is ready on home ...." + fileSystem.name);
+                    $(window).orientationchange();
+                }
+                function fail(evt) {
+                  console.log(evt.target.error.code);
+                }
+            }catch(e){
+                  console.log("Exception on device ready...." + e);
+            }
+          }else{
+            $(window).orientationchange();
+          }
+      });
+
+      function reloadPage(){
+        window.location.reload(true);
+      }
+    </script>
+  </body>
+</html>

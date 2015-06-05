@@ -594,8 +594,6 @@ input, textarea{
 
 .home_card_container, .card_container{
 	border: 2px solid white;
-	border-radius: 25px;
-
 	min-height: 96px;
 	width: 35%;
 }
@@ -640,7 +638,9 @@ input, textarea{
 
 .new_login_form_wrap_setting{
 	width: 100%;
-	margin: 10px 0px;
+	position: absolute;
+	top: 10%;
+
 }
 
 .new_login_form_wrap_setting .jlt_logo{
@@ -664,7 +664,7 @@ input, textarea{
 	padding: 3.4rem;
 }
 .setting_form{
-	width: 50%;
+	width: 80%;
 	background: rgba(255, 255, 255, 1);
 	padding: 1rem;
 	margin: 0 auto;
@@ -1412,12 +1412,21 @@ footer{
 }
 .col-centered {
     display:inline-block;
-    float:none;
+    
     /* reset the text-align */
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+.col-left_aligned {
+    display:inline-block;    
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
 .col-fixed {
     /* custom width */
     width:320px;
@@ -1434,8 +1443,8 @@ footer{
 [class*="col-"] {
     padding-top:10px;
     padding-bottom:15px;
-	border:1px solid #ffffff;
-	background:#ffffff;
+	/*border:1px solid #ffffff;
+	background:#ffffff;*/
 }
 [class*="col-"]:before {
     display:block;position:relative;
@@ -1449,12 +1458,12 @@ footer{
 .item {
     width:100%;
     height:100%;
-	border:1px solid #cecece;
+	border:1px solid #ffffff;
     padding:16px 8px;
-	background:#ededed;
-	background:-webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
-	background:-moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
-	background:-ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+	background: #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom,color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+	background:-moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
 }
 
 /* content styles */

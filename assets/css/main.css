@@ -224,14 +224,14 @@ input, textarea{
 	margin: 20px 0;
 	max-width: 160px;
 }
-.fa-bars{
+/*.fa-bars{
 	color: #ffffff;
 	font-size: 37px!important;
 	padding: 0 8px;
 	line-height: 65px!important;
 	float: left;
 }
-/*
+
 .fa-chevron-left{
 	padding-right:0;
 	padding-left:2px;
@@ -1632,4 +1632,19 @@ footer{
 	.card_image{
 		max-height: 200px;
 	}
+}
+
+
+
+/* New Classes */
+
+.navbar-inverse {
+  background-color: #173F89;
+  border-color: #080808;
+}
+.border-right {
+	border-right: 2px solid #FFFFFF;
+}
+.border-left {
+	border-left: 2px solid #FFFFFF;
 }

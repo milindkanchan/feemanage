@@ -47,13 +47,13 @@
     <div class="header navbar navbar-inverse">
       <div class="header-inner">
         <div class="navbar-brand border-right">
-          <i onclick="backButton();" class="fa fa-bars"></i>
+          <i id="menuToggle" class="fa fa-bars"></i>
         </div>
         <div class="navbar-brand pull-center">
           <i>Fees Management</i>
         </div>
         <div class="navbar-brand pull-right border-left">
-          <i onclick="index.html" class="fa fa-power-off"></i>
+          <i onclick="backButton('index');" class="fa fa-power-off"></i>
         </div>
       </div>
     </div>
@@ -119,6 +119,25 @@
         </div>
       </div>
 		</div>
+
+    <nav class="menu" id="theMenu">
+      <div class="menu-wrap">
+        <span id="menuToggle"><i class="fa fa-bars" ></i></span>
+        <a href="#" class="smoothScroll collapse_txt">Collapse menu</a>
+        <div class="scroll">
+          <a href="master_entry.html" class="smoothScroll user_settings" ><span class="fa fa-file-text"></span>Master</a>
+          <a href="topic.html" class="smoothScroll" ><span class="menuSubItems"></span>Topics</a>
+          <a href="course.html" class="smoothScroll" ><span class="menuSubItems"></span>Courses</a>
+          <a href="schedule.html" class="smoothScroll" ><span class="menuSubItems"></span>Schedules</a>
+          <a href="about.html" class="smoothScroll" ><span class="menuSubItems"></span>About Me</a>
+
+          <a href="enrollment.html" class="smoothScroll user_settings"><span class="fa fa-pencil-square-o"></span>Enrollment</a>
+          <a href="payment.html" class="smoothScroll user_settings"><span class="fa fa-credit-card"></span>Payments</a>
+          <a href="reports.html" class="smoothScroll user_settings"><span class="fa fa-list"></span>Reports</a>
+          <a href="index.html" class="smoothScroll user_settings"><span class="fa fa-power-off"></span>Sign Out</a>
+        </div>
+      </div>
+    </nav>    
 	
 	  <script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.alerts.js"></script> 
@@ -171,6 +190,9 @@
 			function reloadPage(){
         window.location.reload(true);
     	}
+      function backButton(page){
+        window.location =  page + ".html";
+      }
 		</script>
 	</body>
 </html>

@@ -145,7 +145,7 @@ input, textarea{
 
 .menu {
 	position: fixed;
-	right: -345px;
+	left: -350px;
 	width: 350px;
 	height: 100%;
 	top: 0;
@@ -154,7 +154,7 @@ input, textarea{
 }
 
 .menu.menu-open {
-	right: 0px;
+	left: 0px;
 }
 
 .menu-wrap {
@@ -1647,4 +1647,9 @@ footer{
 }
 .border-left {
 	border-left: 2px solid #FFFFFF;
+}
+
+.menuSubItems{
+	padding-left: 15px;
+	font-size: 10px !important;
 }

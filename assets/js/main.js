@@ -3,7 +3,7 @@
 	// Menu settings
 	$('#menuToggle, .menu-close').on('click', function(){
 		$('#menuToggle').toggleClass('active');
-		$('body').toggleClass('body-push-toleft');
+		$('body').toggleClass('body-push-toright');
 		$('#theMenu').toggleClass('menu-open');
 		$('.listing_container, .image_slider, .home_container, .show_pg_content').toggleClass('opacity_01');
 		// $('.topbar, .image_slider, .home_container').toggleClass('side_menu_opened');

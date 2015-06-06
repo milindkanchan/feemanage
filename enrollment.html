@@ -48,63 +48,46 @@
     <div class="header navbar navbar-inverse">
       <div class="header-inner">
         <div class="navbar-brand border-right">
-          <i onclick="backButton();" class="fa fa-chevron-left portlet_icon"></i>
+          <i onclick="backButton('home');" class="fa fa-chevron-left portlet_icon"></i>
         </div>
         <div class="navbar-brand pull-center">
-          <i onclick="backButton();">Enrollments</i>
+          <i>Enrollments</i>
         </div>
         <div class="navbar-brand pull-right border-left">
-          <i onclick="backButton();" class="fa fa-power-off"></i>
+          <i onclick="backButton('index');" class="fa fa-power-off"></i>
         </div>
       </div>
     </div>
     <!-- Topbar Fixed Bar --> 
 
-    <!-- slider 
-    <div class="image_slider"></div> -->
-  
-    <div class="new_login_form_wrap_setting">
-      <div class="setting_form">
-        <div class="inner_login">
-          <label class="text-left">
-            <input type="text" placeholder="Student Name" id="sname">
-          </label>
-          <label class="text-left">
-            <select id="scource" class='form-control custom' placeholder = "Select Course"></select>
-          </label>
-          <label class="text-left">
-            <input type="text" placeholder="Course Fees" id="sfees">
-          </label>
-          <label class="text-left">
-            <input type="text" placeholder="Email" id="semail">
-          </label>
-          <label class="text-left">
-            <input type="text" placeholder="Contact No." id="scontact">
-          </label>
-<input type="button" class="btn jlt_btn" value="Submit" onclick="validateSettings();">
-        <div class="forgot_pass text-center" onclick="cancelSettings();">Cancel</div>          
-        </div>        
+    <!-- Enrollment form -->
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input class="form-control" id="sname">
       </div>
-      <span  class="alert-danger" id="lblError"></span>
-    </div>
-
-    <!-- <div id="divCategory" class="row">
-      <div class="col-sm-6">
-        <div class='card_container home_card_container'>
-          <a class='home_card' href='#'>
-            <img src='#' class='card_image'>
-          </a>  
-        </div>
-          </div>
-          <div class="col-sm-6">
-        <div class='card_container home_card_container'>
-          <a class='home_card' href='#'>
-            <img src='#' class='card_image'>
-          </a>  
-        </div>
-          </div>
-    </div> -->
-    
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select id="scource" class='form-control border-radius' placeholder = "Select Course"></select> 
+      </div>
+      <div class="form-group">
+        <label for="fees">Fees:</label>
+        <input class="form-control" id="sfees">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email">
+      </div> 
+      <div class="form-group">
+        <label for="mobile">Mobile:</label>
+        <input type="mobile" class="form-control" id="Mobile no.">
+      </div> 
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  <!-- Enrollment form -->    
+  
+    <!--<span  class="alert-danger" id="lblError"></span>-->
+     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.alerts.js"></script> 
     <script src="assets/js/jquery.cookie.js"></script>
@@ -112,8 +95,8 @@
     <script src="assets/js/local_storage.js"></script>
     <script src="assets/js/common.js"></script>
     <script src="assets/js/classie.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/plugins.js"></script>
@@ -122,7 +105,7 @@
 
     <script>
       $(document).ready(function(){
-        $(".loading").show();
+        //$(".loading").show();
         var deviceType = getLocalStorage("appDevice");
         $(window).on("orientationchange",function(event){
             if(event.orientation === "portrait"){ //Potrait

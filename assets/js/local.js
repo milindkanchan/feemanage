@@ -229,3 +229,7 @@ function bytesToSize(bytes) {
    var i = Math.floor(Math.log(bytes) / Math.log(k));
    return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
 }
+
+function backButton(page){
+  window.location =  page + ".html";
+}

@@ -48,10 +48,10 @@
     <div class="header navbar navbar-inverse">
       <div class="header-inner">
         <div class="navbar-brand border-right">
-          <i onclick="backButton('home');" class="fa fa-chevron-left"></i>
+          <i onclick="backButton('master_entry');" class="fa fa-chevron-left portlet_icon"></i>
         </div>
         <div class="navbar-brand pull-center">
-          <i>Master Entries</i>
+          <i>Master Entries > About Me</i>
         </div>
         <div class="navbar-brand pull-right border-left">
           <i onclick="backButton('index');" class="fa fa-power-off"></i>
@@ -60,70 +60,26 @@
     </div>
     <!-- Topbar Fixed Bar --> 
 
-
-    <!-- Inner Menu's -->
-    <div class="login_form_wrap new_login_form_wrap">
-      <div class="row row-centered">
-       <div class="col-sm-3"></div>
-        <div class="col-sm-2 col-centered col-max">
-          <div class="item">
-            <div class="content">
-              <div class='card_container home_card_container'>
-                <a class='home_card' href='topic.html'>Topics
-                  <!--<img src='#' class='card_image'> -->
-                </a>  
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-2 col-centered col-max">
-          <div class="item">
-            <div class="content">
-              <div class='card_container home_card_container'>
-                <a class='home_card' href='#'>Courses
-                  <!--<img src='#' class='card_image'> -->
-                </a>  
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Enrollment form -->
+    <form>
+      <div class="form-group">
+        <label for="name">Company Name:</label>
+        <input class="form-control" id="sname">
       </div>
-
-      <div class="row row-centered">
-        <div class="col-sm-2"></div>
-      </div>
-
-      <div class="row row-centered">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-2 col-centered col-max">
-          <div class="item">
-            <div class="content">
-              <div class='card_container home_card_container'>
-                <a class='home_card' href='#'>Schedules
-                  <!--<img src='#' class='card_image'> -->
-                </a>  
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-2 col-centered col-max">
-          <div class="item">
-            <div class="content">
-              <div class='card_container home_card_container'>
-                <a class='home_card' href='#'>About Me
-                  <!--<img src='#' class='card_image'> -->
-                </a>  
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Inner Menu's -->    
+      <div class="form-group">
+        <label for="duration">Duration(Mnth)</label>
+        <input class="form-control" id="smonth">
+      </div>       
+      <div class="form-group">
+        <label for="fees">Fees:</label>
+        <input class="form-control" id="sfees">
+      </div> 
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  <!-- Enrollment form -->    
   
-    
+    <!--<span  class="alert-danger" id="lblError"></span>-->
+     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.alerts.js"></script> 
     <script src="assets/js/jquery.cookie.js"></script>
@@ -131,8 +87,8 @@
     <script src="assets/js/local_storage.js"></script>
     <script src="assets/js/common.js"></script>
     <script src="assets/js/classie.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/plugins.js"></script>

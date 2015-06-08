@@ -48,10 +48,10 @@
     <div class="header navbar navbar-inverse">
       <div class="header-inner">
         <div class="navbar-brand border-right">
-          <i onclick="backButton('master_entry');" class="fa fa-chevron-left portlet_icon"></i>
+          <i onclick="backButton('home');" class="fa fa-chevron-left portlet_icon"></i>
         </div>
         <div class="navbar-brand pull-center">
-          <i>Master Entries > About Me</i>
+          <i>Reports</i>
         </div>
         <div class="navbar-brand pull-right border-left">
           <i onclick="backButton('index');" class="fa fa-power-off"></i>
@@ -63,17 +63,29 @@
     <!-- Enrollment form -->
     <form>
       <div class="form-group">
-        <label for="name">Company Name</label>
-        <input class="form-control" id="sname">
+        <label for="topic">Student</label>
+        <select id="sstudent" class='form-control border-radius' placeholder = "Select Student"></select> 
       </div>
       <div class="form-group">
-        <label for="duration">Address</label>
-        <input class="form-control" id="smonth">
-      </div>       
+        <label for="duration">Enrolled Course</label>
+        <input class="form-control" id="scourse">
+      </div>
       <div class="form-group">
-        <label for="fees">Contact No.</label>
+        <label for="fees">Course Fees</label>
         <input class="form-control" id="sfees">
-      </div> 
+      </div>
+      <div class="form-group">
+        <label for="discount">Discount(%)</label>
+        <input class="form-control" id="sdiscount">
+      </div>
+      <div class="form-group">
+        <label for="discount">Total Fees</label>
+        <input class="form-control" id="sdiscount">
+      </div>
+      <div class="form-group">
+        <label for="paymentdtl">Payment Details</label>
+        <textarea class="form-control" row=3 id="spaydtl" placeholder="Cash/Cheque Details"></textarea>
+      </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
   <!-- Enrollment form -->    

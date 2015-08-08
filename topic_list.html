@@ -6,7 +6,7 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <!--<link rel="shortcut icon" href="assets/ico/favicon.png">-->
 
     <title>Fees Management</title>
 
@@ -31,7 +31,7 @@
     
     <script src="assets/js/modernizr.custom.js"></script>
     <script src="cordova.js"></script>
-    <script src="PDFReader.js"></script>
+    <!--<script src="PDFReader.js"></script>-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -51,7 +51,7 @@
           <i onclick="backButton('master_entry');" class="fa fa-chevron-left portlet_icon"></i>
         </div>
         <div class="navbar-brand pull-center">
-          <i>Courses</i>
+          <i>Topics</i>
         </div>
         <div class="navbar-brand pull-right border-left">
           <i onclick="backButton('index');" class="fa fa-power-off"></i>
@@ -60,27 +60,13 @@
     </div>
     <!-- Topbar Fixed Bar --> 
 
-    <!-- Enrollment form -->
-    <form>
-      <div class="form-group">
-        <label for="name">Course Name</label>
-        <input class="form-control" id="sname">
+    <!-- Topic List -->
+    <div class='section'>
+      <div class='container'>
+        <div class='row' id="topicList"></div>
       </div>
-      <div class="form-group">
-        <label for="topic">Topics</label>
-        <select multiple id="stopic" class='form-control border-radius' placeholder = "Select Topic"></select> 
-      </div>
-      <div class="form-group">
-        <label for="duration">Duration(Mnth)</label>
-        <input class="form-control" id="smonth">
-      </div>           
-      <div class="form-group">
-        <label for="fees">Fees</label>
-        <input class="form-control" id="sfees">
-      </div> 
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-  <!-- Enrollment form -->    
+    </div>
+   <!-- Topic List -->    
   
     <!--<span  class="alert-danger" id="lblError"></span>-->
      
@@ -98,6 +84,7 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/select2.js"></script>
     <script src="assets/js/jquery.mobile-events.min.js"></script>
+    <script src="assets/js/data_listing.js"></script>
 
     <script>
       $(document).ready(function(){
@@ -120,6 +107,7 @@
                 function onFileSystemSuccess(fileSystem) {
                     console.log("Cordova is ready on home ...." + fileSystem.name);
                     $(window).orientationchange();
+                    feeListing();
                 }
                 function fail(evt) {
                   console.log(evt.target.error.code);
@@ -129,6 +117,7 @@
             }
           }else{
             $(window).orientationchange();
+            feeListing();
           }
       });
 

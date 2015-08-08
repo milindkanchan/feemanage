@@ -469,3 +469,41 @@ function onPdfError(error){
   window.console.log(error);
   alert("Sorry! Cannot view document.");
 }
+
+
+
+// *********************  Fee Management save data ****************************
+
+
+function saveTopic(){
+    var topic = $.parseJSON(getLocalStorage("feeTopic"));
+    console.log("??????????")
+    console.log(topic);
+    var obj = [];
+    var dup = false;
+    var id;
+    var tname = $("#topic_name").val();
+    var tduration = $("#topic_duration").val();
+    var tfees = $("#topic_fees").val();
+
+    console.log("................")
+    console.log(tname)
+    console.log(tduration)
+    console.log(tfees)
+
+    if(typeof topic !== 'undefined' && topic !== null){        
+        var cnt = topic.length;
+        id = cnt + 1;
+        obj = topic;
+    }else{
+        id = 1;   
+    }
+    obj.push({"id": id, "topicName":  tname, "topicDuration": tduration, "topicFees": tfees});
+    setLocalStorage("feeTopic", JSON.stringify(obj));
+    console.log(obj)
+    console.log(">>>>>>>>>>>>> Data Saved");
+}
+
+function getTopic(){
+
+}

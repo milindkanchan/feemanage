@@ -1653,3 +1653,11 @@ footer{
 	padding-left: 15px;
 	font-size: 10px !important;
 }
+
+.listingContent{
+	background-color: #6B6A9E;
+	border: 1px solid #FFFFFF;
+	line-height: 30px;
+	border-radius: 5px;
+	padding-left: 5px;
+}
